@@ -7,90 +7,77 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="crown">
     <div class="wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="#" width="100" height="100" alt="logo">
+      <a class="crown__link">
+        <img class="crown__img" src="#" width="100" height="100" alt="logo">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="меню">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button" aria-label="меню">
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="site-list main-nav__list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="index.html">Главная</a>
+        <div class="navigation__wrapper">
+          <ul class="bill navigation__list">
+            <li class="bill__item bill__item--active">
+              <a class="bill__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link">Каталог продукции</a>
+            <li class="bill__item  bill__item--active">
+              <a class="bill__link">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
-                Подбор программы
-              </a>
+            <li class="bill__item">
+              <a class="bill__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
-  <div class="catalog-title-container">
-    <hr class="catalog-separator-line">
+  <div class="name">
     <h1 class="catalog-line">Каталог продукции</h1>
-    <hr class="catalog-separator-line">
   </div>
-  <main class="catalog-main">
-    <ul class="catalog-list">
-      <li class="catalog-list-item">
-        <img class="catalog-list-item__image" src="#" alt="catalog-image">
-        <h3 class="catalog-list-item__name"></h3>
-        <table class="catalog-list-item__table">
-          <tr>
-            <td>Объем</td>
-            <td>500 г</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Курица</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>700 Р</td>
-          </tr>
-        </table>
-        <button class="catalog-button catalog-button--order">Заказать</button>
-      </li>
-    </ul>
-    <div class="show-more">
-      <div class="wrapper">
-        <div class="plus"></div>
-        <h3 class="show-more__paragraph">Показать еще 100500 товаров</h3>
-        <p class="show-more__notice"></p>
-        <button class="catalog-button catalog-button--show-all">Показать все</button>
-      </div>
-    </div>
-    <div class="extra-goods">
-      <h3 class="extra-goods__title">Дополнительные товары</h3>
-      <div class="extra-goods__line"></div>
-    </div>
+  <main class="catalog">
     <div class="wrapper">
-      <div class="extra-goods__item">
-        <h3 class="extra-goods__title">Сахарозаменитель</h3>
-        <div class="extra-goods__description">
-          <p class="extra-goods__name">1 упаковка (100 г)</p>
-          <p class="extra-goods__price">200 Р</p>
-        </div>
-        <button class="catalog-button catalog-button--order">Заказать</button>
-      </div>
-      <hr class="catalog-separator-line catalog-separator-line--order">
+      <ul class="products">
+        <li class="product">
+          <img class="product__image" src="#" alt="Cat Energy PRO 500 г">
+          <h3 class="denotation">Cat Energy PRO 500 г</h3>
+          <table class="product__table">
+            <tr>
+              <td class="product__info">Объем</td>
+              <td class="product__info">500 г</td>
+            </tr>
+            <tr>
+              <td class="product__info">Вкус</td>
+              <td class="product__info">Курица</td>
+            </tr>
+            <tr>
+              <td class="product__info">Цена</td>
+              <td class="product__info">700 Р</td>
+            </tr>
+          </table>
+          <a class="button">Заказать</a>
+        </li>
+        <li class="show">
+          <h3 class="denotation">Показать еще 100500 товаров</h3>
+          <p class="show__notice">На самом деле вкусов гораздо больше!</p>
+          <a class="button show-all">Показать все</a>
+        </li>
+      </ul>
     </div>
-    <hr class="catalog-separator-line">
-    <div class="wrapper">
-      <div class="order-else">
-        <div class="order-else__icon"></div>
-        <p class="order-else__offer">
-          Закажите все и получите чехол для кота в подарок!
-        </p>
+    <div class="extra">
+      <h3 class="extra__title">Дополнительные товары</h3>
+    </div>
+    <div class="extra__item">
+      <h3 class="extra__title">Сахарозаменитель</h3>
+      <div class="extra__description">
+        <p class="extra__name">1 упаковка (100 г)</p>
+        <p class="extra__price">200 Р</p>
       </div>
+      <button class="button">Заказать</button>
+    </div>
+    <div class="order-else">
+      <p class="order-else__offer">
+        Закажите все и получите чехол для кота в подарок!
+      </p>
     </div>
     <div class="collaborate">
       <p class="collaborate__invite">
