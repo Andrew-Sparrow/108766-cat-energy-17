@@ -33,9 +33,59 @@
     </div>
   </header>
   <div class="wrapper">
-    <main class="form-main">
-      <h1 class="form-main__title">Подбор программы</h1>
+    <main class="form">
+      <h1 class="headline form-main__title">Подбор программы</h1>
       <form name="choice_programm" action=" https://echo.htmlacademy.ru" method="post">
+        <h3 class="form__plea">Заполните анкету и мы подберем программу питания для вашего кота</h3>
+        <label class="form__label" for="name">Имя:*</label>
+        <input class="form__signature" id="name" type="text" name="name" placeholder="Барсик">
+        
+        <label class="form__label" for="weight">Вес (кг):*</label>
+        <input class="form__signature" id="weight" type="text" name="weight" placeholder="7">
+        
+        <label class="form__label" for="age">Возраст (лет):</label>
+        <input class="form__signature" id="age" type="text" name="age" placeholder="7">
+        
+        <label class="form__label" for="thin">Похудение</label>
+        <input class="form__signature" id="thin" type="radio" name="thin" checked>
+        
+        <label class="form__label" for="fat">Набор массы</label>
+        <input class="form__signature" id="fat" type="radio" name="fat">
+        
+        <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label>
+        <input class="form__signature" id="advice" type="radio" name="advice">
+        
+        <h3 class="heading">Контактные данные(владельца кота)</h3>
+        
+        <label class="form__label" for="email">E-mail:*</label>
+        <input class="form__signature" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
+        
+        <label class="form__label" for="phone">Телефон:*</label>
+        <input class="form__signature" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+        
+        <h3 class="heading">Комментарий</h3>
+        
+        <textarea class="form__textarea" id="story" name="story" rows="5" cols="33">
+              Расскажите обо всех повадках кота
+        </textarea>
+        
+        <h3 class="heading">Дополнительно</h3>
+        
+        <label class="form__label" for="sugar">Сахарозаменитель</label>
+        <input class="form__signature" id="sugar" type="checkbox" name="sugar" checked>
+        
+        <label class="form__label" for="water">Питьевая вода</label>
+        <input class="form__signature" id="water" type="checkbox" name="water">
+        
+        <label class="form__label" for="milk">Молоко</label>
+        <input class="form__signature" id="milk" type="checkbox" name="milk">
+        
+        <label class="form__label" for="vitamin">Витамины</label>
+        <input class="form__signature" id="vitamin" type="checkbox" name="milk">        
+        
+        <input class="form__signature" type="submit" value="Отправить заявку">
+        
+        <p class="form__note">* — Обязательные поля</p>
       </form>
     </main>
   </div>
