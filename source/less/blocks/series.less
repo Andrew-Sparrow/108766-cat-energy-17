@@ -6,6 +6,7 @@
 }
 
 .series__item {
+  position: relative;
   width: 235px;
   background-color: @gray;
   padding: 0 20px;
@@ -17,24 +18,20 @@
   margin: 0;
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: "Oswald", "Arial", sans-serif;
+  padding-left: 70px;
   font-size: 24px;
   text-decoration: none;
-  text-align: center;
   text-transform: uppercase;
   line-height: 37px;
-  font-weight: 400;
   color: @black;
 }
 
 .series__link {
   display: block;
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 16px;
-  font-weight: 400;
   color: @black;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -43,4 +40,16 @@
 .series__paragraph {
   margin: 0;
   margin-bottom: 20px;
+}
+
+.series__title::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: @leaf;
+  width: 50px;
+  height: 50px;
+  top: 32px;
+  left: 20px;
+  border-radius: 50%;
 }
