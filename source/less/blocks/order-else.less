@@ -1,0 +1,31 @@
+.order-else {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background: @leaf;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  width: 280px;
+  height: 289px;
+}
+
+.order-else__offer {
+  width: 159px;
+  padding-top: 190px;
+  font-family: "Arial", sans-serif;
+  color: @white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.order-else::after {
+  position: absolute;
+  width: 56px;
+  height: 61px;
+  content: "";
+  background-color: @leaf;
+  background-image: url("../img/icon-gift.svg");
+  top: 65px;
+  left: 110px;
+  background-repeat: no-repeat;
+}
