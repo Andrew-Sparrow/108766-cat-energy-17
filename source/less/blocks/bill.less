@@ -1,3 +1,37 @@
 .bill {
-  background: grey;
+  display: none;
+  width: 442px;
+}
+
+.bill__link {
+  text-decoration: none;
+  font-family: @font-oswald;
+  color: @black;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.bill__item {
+  margin-right: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .bill {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .bill {
+    background-color: gray;
+  }
+
+  .bill__link {
+    color: @white;
+  }
 }

@@ -1,5 +1,12 @@
 .container {
   margin: 0 auto;
   outline: 1px solid @black;
-  width: @phone-width;
+  min-width: @phone-width;
+  max-width: @desktop-width;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    min-width: @phone-width;
+  }
 }
