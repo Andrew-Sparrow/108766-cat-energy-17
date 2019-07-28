@@ -1,5 +1,4 @@
 .header {
-  box-sizing: border-box;
   min-width: @phone-width;
   max-width: @desktop-width;
   display: flex;
@@ -21,4 +20,25 @@
   line-height: 16px;
   font-weight: 400;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .header__img {
+    content: url("../img/logo-tablet.svg");
+    width: 174px;
+    height: 59px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    height: 142px;
+    margin-bottom: -150px;
+  }
+
+  .header__img {
+    content: url("../img/logo-desktop.svg");
+    width: 203px;
+    height: 60px;
+  }
 }
