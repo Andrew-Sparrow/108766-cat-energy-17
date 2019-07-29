@@ -38,7 +38,6 @@
   text-transform: uppercase;
   line-height: 16px;
   color: @black;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -63,6 +62,7 @@
   .series__item {
     width: 708px;
     padding-left: 52px;
+    margin-bottom: 51px;
   }
 
   .series__title::before {
@@ -83,8 +83,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .series {
+    margin-bottom: 79px;
+  }
+
   .series__item {
     width: 570px;
+    margin-bottom: 0;
   }
 
   .series__title::before {
@@ -97,5 +102,19 @@
 
   .series__title {
     padding-left: 216px;
+  }
+
+  .series__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .series__paragraph {
+    width: 462px;
+    margin-bottom: 32px;
+  }
+
+  .series__paragraph--last {
+    width: 444px;
   }
 }
