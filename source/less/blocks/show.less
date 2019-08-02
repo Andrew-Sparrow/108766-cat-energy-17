@@ -13,4 +13,24 @@
 .show--all {
   background-color: @gray;
   color: @black;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .show {
+    min-height: 432px;
+    box-sizing: border-box;
+    border: @border-grey;
+    background-color: @white;
+  }
+
+  .show--all {
+    width: 249px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .show--all {
+    width: 169px;
+  }
 }

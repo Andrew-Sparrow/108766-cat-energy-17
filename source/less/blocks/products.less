@@ -3,3 +3,14 @@
   padding: 0;
   margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .products li:nth-child(2n) {
+    margin-left: 60px;
+  }
+}
