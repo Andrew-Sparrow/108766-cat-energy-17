@@ -21,27 +21,12 @@
   color: @black;
 }
 
-@media (min-width: @tablet-width) {
-  .header__img {
-    content: url("../img/logo-tablet.svg");
-    width: 174px;
-    height: 59px;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .header {
     height: 142px;
-    margin-bottom: -150px;
-  }
-
-  .header__img {
-    content: url("../img/logo-desktop.svg");
-    width: 203px;
-    height: 60px;
   }
 
   .header--margin {
-    margin-bottom: 0;
+    margin-bottom: -150px;
   }
 }
