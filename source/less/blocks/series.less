@@ -59,6 +59,7 @@
 
 @media (min-width: @tablet-width) {
   .series__item {
+    box-sizing: border-box;
     width: 708px;
     padding-left: 52px;
     margin-bottom: 51px;
@@ -84,11 +85,12 @@
 @media (min-width: @desktop-width) {
   .series {
     margin-bottom: 79px;
+    justify-content: space-between;
   }
 
   .series__item {
     width: 570px;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .series__title::before {
