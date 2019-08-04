@@ -1,10 +1,15 @@
 .example {
+  width: @phone-width;
   background-color: @gray;
+  margin: 0 auto;
 }
 
 .example__heading {
-  padding-top: 20px;
-  margin: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-bottom: 30px;
+  outline: 1px solid greenyellow;
 }
 
 .example__info {
@@ -35,8 +40,26 @@
   width: 200px;
 }
 
-@media (min-width: @desktop-width) {
-  .example__heading {
+@media (min-width: @tablet-width) {
+  .example {
+    width: @tablet-width;
     background-color: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    width: 100%;
+    background-color: @gray;
+  }
+
+  .example__container {
+    background-color: @white;
+    outline: 1px solid red;
+  }
+
+  .example__heading {
+    width: @desktop-width;
+    margin: 0 auto;
   }
 }
