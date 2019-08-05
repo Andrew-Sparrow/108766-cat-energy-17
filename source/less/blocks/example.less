@@ -7,7 +7,7 @@
 .example__heading {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
   padding-bottom: 30px;
   outline: 1px solid greenyellow;
 }
@@ -45,6 +45,11 @@
     width: @tablet-width;
     background-color: @white;
   }
+
+  .example__heading {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -62,5 +67,7 @@
     width: @desktop-width;
     margin: 0 auto;
     padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

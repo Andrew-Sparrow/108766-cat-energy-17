@@ -1,4 +1,6 @@
 .collaborate {
+  width: 320px;
+  margin: 0 auto;
   background-color: @gray;
   box-sizing: border-box;
 }
@@ -7,8 +9,10 @@
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   justify-content: space-between;
-  background-color: @white;
+  background-color: @gray;
 }
 
 .collaborate__advert {
@@ -32,6 +36,12 @@
   margin: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .collaborate {
+    width: @tablet-width;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .collaborate {
     width: 100%;
@@ -45,11 +55,13 @@
 
   .collaborate__container {
     position: absolute;
+    box-sizing: border-box;
     width: 570px;
     min-height: 201px;
     align-items: center;
     top: 100px;
-    left: 150px;
+    left: 40px;
+    background-color: @white;
   }
 
   .collaborate__advert {

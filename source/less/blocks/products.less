@@ -9,9 +9,16 @@
   .products {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -50px;
   }
 
   .products li:nth-child(2n) {
     margin-left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products {
+    margin-left: -80px;
   }
 }
