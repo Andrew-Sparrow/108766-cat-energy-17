@@ -37,8 +37,8 @@
       </div>
     </nav>
   </header>
-  <main class="catalog container">
-    <div class="wrapper">
+  <main class="catalog">
+    <div class="wrapper container">
       <h1 class="catalog-line">Каталог продукции</h1>
       <ul class="products">
           <li class="product">
@@ -77,31 +77,33 @@
           </li>
         </ul>
       <div class="extra">
-        <h3 class="heading extra__title">Дополнительные товары</h3>
-      </div>
-      <div class="extra__item">
-        <h3 class="extra__title">Сахарозаменитель</h3>
-        <div class="extra__description">
-          <p class="extra__name">1 упаковка (100 г)</p>
-          <p class="extra__price">200 Р</p>
+        <div class="extra__container">
+          <h3 class="heading extra__title">Дополнительные товары</h3>
+          <div class="extra__item">
+            <h3 class="extra__title">Сахарозаменитель</h3>
+            <div class="extra__description">
+              <p class="extra__name">1 упаковка (100 г)</p>
+              <p class="extra__price">200 Р</p>
+            </div>
+            <a class="button extra__button">Заказать</a>
+          </div>
         </div>
-        <a class="button extra__button">Заказать</a>
-      </div>
-      <div class="order-else">
-        <p class="order-else__offer">
+        <p class="order-else">
           Закажите все и получите чехол для кота в подарок!
         </p>
       </div>
     </div>
-    <div class="collaborate">
-      <div class="collaborate__container wrapper">
-        <p class="denotation collaborate__advert">
-          приглашаем к сотрудничеству дилеров!
-        </p>
-        <address class="collaborate__address">
-          ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург
-        </address>
+    <div class="collaborate container">
+      <div class="collaborate__box">
+        <div class="collaborate__container wrapper">
+          <p class="denotation collaborate__advert">
+            приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="collaborate__address">
+            ул. Большая Конюшенная, д. 19/8
+            Санкт-Петербург
+          </address>
+        </div>
       </div>
       <iframe class="collaborate__map">
       </iframe>
@@ -138,7 +140,7 @@
         </li>
       </ul>
       <a class="copyright footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="курс адаптивной верстки HTMLAcademy">
+         aria-label="курс адаптивной верстки HTMLAcademy">
         <span class="copyright__name">HTML Academy</span>
         <img class="copyright__logo" src="img/htmlacademy-svg.svg" width="27" height="34" alt="логотип htmlacademy">
       </a>
