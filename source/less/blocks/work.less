@@ -1,8 +1,9 @@
 .work {
+  width: @phone-width;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin-bottom: 30px;
+  margin: 0 auto;
 }
 
 .work__list {
@@ -40,6 +41,7 @@
 @media (min-width: @tablet-width) {
   .work {
     flex-wrap: wrap;
+    width: @tablet-width;
   }
 
   .work__item::before {
@@ -70,6 +72,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .work {
+    width: @desktop-width;
+  }
+
   .work__list {
     margin-left: -80px;
     justify-content: space-between;

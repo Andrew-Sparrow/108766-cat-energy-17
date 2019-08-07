@@ -3,9 +3,7 @@
 }
 
 .example__heading {
-  width: @phone-width;
   box-sizing: border-box;
-  margin: 0 auto;
   padding: 0 20px;
   padding-bottom: 30px;
   outline: 1px solid greenyellow;
@@ -48,6 +46,15 @@
     width: @tablet-width;
     padding-left: 40px;
     padding-right: 40px;
+    margin: 0 auto;
+  }
+
+  .example__box {
+    margin: 0 auto;
+  }
+
+  .example__explanation {
+    text-align: right;
   }
 
   .example__container--heading {
@@ -64,6 +71,8 @@
   }
 
   .example__before-after {
+    box-sizing: border-box;
+    margin: 0 auto;
     min-height: 462px;
   }
 }
@@ -88,5 +97,9 @@
     padding-bottom: 30px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .example__explanation {
+    text-align: left;
   }
 }
