@@ -71,12 +71,17 @@
 
 @media (min-width: @desktop-width) {
   .work__list {
+    margin-left: -80px;
     justify-content: space-between;
+    padding-bottom: 90px;
+  }
+
+  .work__item:nth-child(2n) {
+    margin-left: 80px;
   }
 
   .work__item {
-    &:nth-child(odd) {
-      margin-right: 0;
-    }
+    margin-left: 80px;
+    margin-right: 0;
   }
 }
