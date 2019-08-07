@@ -3,7 +3,12 @@
 }
 
 .example__heading {
-  padding-top: 20px;
+  width: @phone-width;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  outline: 1px solid greenyellow;
 }
 
 .example__info {
@@ -17,7 +22,7 @@
   font-size: 12px;
 }
 
-.example__info-container {
+.example__before-after {
   display: flex;
 }
 
@@ -32,4 +37,56 @@
   padding-left: 44px;
   justify-content: space-between;
   width: 200px;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: @white;
+  }
+
+  .example__heading {
+    width: @tablet-width;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .example__container--heading {
+    background-color: @white;
+  }
+
+  .example__case,
+  .example__info-container {
+    display: flex;
+  }
+
+  .example__container--before {
+    background-color: @gray;
+  }
+
+  .example__before-after {
+    min-height: 462px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    width: 100%;
+    background-color: @gray;
+  }
+
+  .example__container {
+    outline: 1px solid red;
+  }
+
+  .example__container--before {
+    background-color: @gray;
+  }
+
+  .example__heading {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }

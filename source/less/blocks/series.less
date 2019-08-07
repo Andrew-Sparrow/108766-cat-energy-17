@@ -1,13 +1,15 @@
 .series {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  justify-content: center;
 }
 
 .series__item {
   position: relative;
-  width: 235px;
+  box-sizing: border-box;
+  width: 280px;
   background-color: @gray;
   padding: 0 20px;
   margin: 0 20px;
@@ -16,10 +18,12 @@
 
 .series__title {
   margin: 0;
+  width: 137px;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 70px;
   font-size: 24px;
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 37px;
@@ -33,7 +37,6 @@
   text-transform: uppercase;
   line-height: 16px;
   color: @black;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -52,4 +55,69 @@
   top: 32px;
   left: 20px;
   border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .series__item {
+    box-sizing: border-box;
+    width: 708px;
+    padding-left: 52px;
+    margin-bottom: 51px;
+  }
+
+  .series__title::before {
+    width: 200px;
+    height: 200px;
+    left: 450px;
+  }
+
+  .series__title {
+    padding-top: 82px;
+    padding-left: 0;
+    padding-bottom: 75px;
+  }
+
+  .series__link {
+    margin-bottom: 63px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .series {
+    margin-bottom: 79px;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .series__item {
+    width: 570px;
+    margin: 0;
+  }
+
+  .series__title::before {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    line-height: 37px;
+    left: 52px;
+  }
+
+  .series__title {
+    padding-left: 216px;
+  }
+
+  .series__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .series__paragraph {
+    width: 462px;
+    margin-bottom: 32px;
+  }
+
+  .series__paragraph--last {
+    width: 444px;
+  }
 }

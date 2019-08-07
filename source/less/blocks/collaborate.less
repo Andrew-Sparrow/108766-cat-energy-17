@@ -1,11 +1,17 @@
-.collaborate {
-  background-color: @gray;
+.collaborate__box {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: @white;
 }
 
 .collaborate__container {
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
 }
 
 .collaborate__advert {
@@ -24,10 +30,50 @@
 .collaborate__map {
   width: 100%;
   border: none;
-  background-color: rgba(246, 166, 68, 0.38);
+  background-color: @leaf;
   min-height: 350px;
+  margin: 0;
 }
 
-.collaborate--main {
-  background-color: @white;
+@media (min-width: @tablet-width) {
+  .collaborate__box {
+    width: @tablet-width;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .collaborate {
+    width: 100%;
+  }
+
+  .collaborate__box {
+    position: relative;
+    width: @desktop-width;
+    margin: 0 auto;
+  }
+
+  .collaborate__container {
+    position: absolute;
+    box-sizing: border-box;
+    width: 570px;
+    min-height: 201px;
+    align-items: center;
+    top: 100px;
+    left: 40px;
+    background-color: @white;
+  }
+
+  .collaborate__advert {
+    line-height: 25px;
+  }
+
+  .collaborate__position {
+    position: relative;
+  }
+
+  .collaborate__map {
+    min-height: 410px;
+  }
 }

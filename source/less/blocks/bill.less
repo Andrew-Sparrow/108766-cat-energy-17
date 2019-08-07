@@ -1,3 +1,44 @@
 .bill {
-  background: grey;
+  display: none;
+  width: 442px;
+  color: @black;
+}
+
+.bill__link {
+  text-decoration: none;
+  font-family: @font-oswald;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.bill__item {
+  margin-right: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .bill {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .bill {
+    width: 484px;
+    padding-right: 110px;
+  }
+
+  .bill__link {
+    font-size: 20px;
+    line-height: 60px;
+  }
+
+  .bill--color {
+    color: @white;
+  }
 }

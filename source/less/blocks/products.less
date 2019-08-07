@@ -2,4 +2,23 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -50px;
+  }
+
+  .products li:nth-child(2n) {
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products {
+    margin-left: -80px;
+  }
 }

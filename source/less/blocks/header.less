@@ -1,4 +1,5 @@
 .header {
+  max-width: @desktop-width;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,4 +19,14 @@
   line-height: 16px;
   font-weight: 400;
   color: @black;
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    height: 142px;
+  }
+
+  .header--margin {
+    margin-bottom: -150px;
+  }
 }

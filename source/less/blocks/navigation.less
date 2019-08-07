@@ -1,8 +1,11 @@
-.navigation__wrapper {
-  display: none;
-}
-
 .navigation__toggle {
+  padding: 0;
   background-color: white;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation__toggle {
+    display: none;
+  }
 }

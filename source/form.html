@@ -3,14 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Каталог:Кэт энерджи</title>
+  <title>Форма:Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header wrapper">
+  <header class="header container">
     <a class="header__link">
-      <img class="header__img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
+      <picture class="product__picture">
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header__img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
+      </picture>
     </a>
     <nav class="navigation">
       <button class="navigation__toggle" type="button" aria-label="меню">
@@ -19,22 +25,22 @@
       <div class="navigation__wrapper">
         <ul class="bill navigation__list">
           <li class="bill__item bill__item--active">
-            <a class="bill__link">Главная</a>
+            <a class="bill__link" href="index.html">Главная</a>
           </li>
           <li class="bill__item">
             <a class="bill__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="bill__item">
-            <a class="bill__link" href="form.html">Подбор программы</a>
+            <a class="bill__link">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <div class="wrapper">
-    <main class="form">
+  <main class="form">
+    <div class="container">
       <h1 class="headline form__title">Подбор программы</h1>
-      <form name="choice_programm" action=" https://echo.htmlacademy.ru" method="post">
+      <form name="choice_program" action=" https://echo.htmlacademy.ru" method="post">
         <h3 class="form__plea">Заполните анкету и мы подберем программу питания для вашего кота</h3>
         <label class="form__label" for="name">Имя:*</label>
         <input class="form__signature" id="name" type="text" name="name" placeholder="Барсик">
@@ -69,23 +75,25 @@
         <input class="form__signature" type="submit" value="Отправить заявку">
         <p class="form__note">* — Обязательные поля</p>
       </form>
-    </main>
-  </div>
-  <div class="collaborate">
-    <div class="collaborate__container wrapper">
-      <p class="denotation collaborate__advert">
-        приглашаем к сотрудничеству дилеров!
-      </p>
-      <address class="collaborate__address">
-        ул. Большая Конюшенная, д. 19/8
-        Санкт-Петербург
-      </address>
     </div>
-    <iframe class="collaborate__map">
-    </iframe>
-  </div>
+    <div class="collaborate">
+      <div class="collaborate__box">
+        <div class="collaborate__container">
+          <p class="denotation collaborate__advert">
+            приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="collaborate__address">
+            ул. Большая Конюшенная, д. 19/8
+            Санкт-Петербург
+          </address>
+        </div>
+      </div>
+      <iframe class="collaborate__map">
+      </iframe>
+    </div>
+  </main>
   <footer class="footer">
-    <div class="wrapper footer__wrapper">
+    <div class="container footer__container">
       <a class="footer__link">
         <img class="footer__img" width="128" height="24" src="img/logo-footer.svg" alt="логотип Cat Energy">
       </a>

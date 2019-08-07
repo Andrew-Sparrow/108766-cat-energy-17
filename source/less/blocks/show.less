@@ -1,7 +1,8 @@
-.show__more {
+.show__title {
   margin: 0;
   text-align: center;
   padding-top: 80px;
+  font-weight: 400;
 }
 
 .show__notice {
@@ -10,7 +11,27 @@
   line-height: 16px;
 }
 
-.show--all {
+.show__button {
   background-color: @gray;
   color: @black;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .show {
+    min-height: 432px;
+    box-sizing: border-box;
+    border: @border-grey;
+    background-color: @white;
+  }
+
+  .show__button {
+    width: 249px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .show__button {
+    width: 169px;
+  }
 }
