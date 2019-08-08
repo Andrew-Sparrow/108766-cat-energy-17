@@ -10,7 +10,7 @@
   position: relative;
   box-sizing: border-box;
   width: 280px;
-  background-color: @gray;
+  background-color: @graylight;
   padding: 0 20px;
   margin: 0 20px;
   margin-bottom: 20px;
@@ -55,6 +55,31 @@
   top: 32px;
   left: 20px;
   border-radius: 50%;
+}
+
+.series__title::after {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.series__item:nth-child(1) .series__title::after {
+  top: 32px;
+  left: 29px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+}
+
+.series__item:nth-child(2) .series__title::after {
+
+  top: 44px;
+  left: 9px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {

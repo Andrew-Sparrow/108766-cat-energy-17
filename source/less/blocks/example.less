@@ -1,5 +1,5 @@
 .example {
-  background-color: @gray;
+  background-color: @graylight;
 }
 
 .example__heading {
@@ -9,25 +9,53 @@
   outline: 1px solid greenyellow;
 }
 
+.example__info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .example__info {
+  position: relative;
   width: 123px;
   font-weight: 400;
-  border: 1px solid @black;
+  border: 1px solid @gray;
   text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
 }
 
 .example__note {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 88px;
+  content: "";
+  top: 46px;
+  left: 20px;
   font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+  background-color: @graylight;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .example__before-after {
   display: flex;
+  flex-direction: column;
 }
 
 .example__explanation {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .example__denotation-container {
@@ -67,7 +95,7 @@
   }
 
   .example__container--before {
-    background-color: @gray;
+    background-color: @graylight;
   }
 
   .example__before-after {
@@ -80,7 +108,7 @@
 @media (min-width: @desktop-width) {
   .example {
     width: 100%;
-    background-color: @gray;
+    background-color: @graylight;
   }
 
   .example__container {
@@ -88,7 +116,7 @@
   }
 
   .example__container--before {
-    background-color: @gray;
+    background-color: @graylight;
   }
 
   .example__heading {
