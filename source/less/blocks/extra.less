@@ -1,14 +1,33 @@
 .extra {
   display: flex;
   background-color: rgba(255, 255, 0, 0.3);
+  flex-direction: column;
+}
+
+.extra__header {
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .extra__title {
+  font-size: 16px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .extra__button {
   margin-bottom: 20px;
+}
+
+.extra__name,
+.extra__price {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.extra__description {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: @desktop-width) {

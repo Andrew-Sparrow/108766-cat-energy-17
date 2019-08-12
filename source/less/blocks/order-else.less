@@ -1,14 +1,43 @@
 .order-else {
-  display: none;
   margin: 0;
+  display: flex;
+  position: relative;
+  width: 280px;
+  box-sizing: border-box;
+  justify-content: center;
+  background: @leaf;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  padding-top: 190px;
+  padding-bottom: 45px;
+  font-family: "Arial", sans-serif;
+  color: @white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.order-else__text {
+  width: 173px;
+}
+
+.order-else::after {
+  position: absolute;
+  width: 56px;
+  height: 61px;
+  content: "";
+  background-color: @leaf;
+  background-image: url("../img/icon-gift.svg");
+  top: 65px;
+  left: 111px;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @desktop-width) {
   .order-else {
-    display: flex;
-    position: relative;
     width: 245px;
-    box-sizing: border-box;
     justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
@@ -23,16 +52,10 @@
     line-height: 20px;
     text-align: center;
   }
+
+  .order-else::after {
+    top: 65px;
+    left: 96px;
+  }
 }
 
-.order-else::after {
-  position: absolute;
-  width: 56px;
-  height: 61px;
-  content: "";
-  background-color: @leaf;
-  background-image: url("../img/icon-gift.svg");
-  top: 65px;
-  left: 96px;
-  background-repeat: no-repeat;
-}
