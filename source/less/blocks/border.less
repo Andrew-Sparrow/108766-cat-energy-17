@@ -1,3 +1,11 @@
 .border__bottom {
-  border-bottom: @border-grey;
+  //border-bottom: @border-grey;
+  border-bottom: 1px solid  #000000;
+  //оставлю пока , что бы ярче было видно
+}
+
+@media (min-width: @tablet-width) {
+  .border__bottom {
+    border-bottom: none;
+  }
 }

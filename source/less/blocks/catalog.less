@@ -4,9 +4,30 @@
   flex-direction: column;
 }
 
+.catalog__container--item {
+  width: 100%;
+}
+
 .catalog-line {
   margin-top: 31px;
   font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/*.catalog__container {
+  min-width: 100%;
+}*/
+
+@media (min-width: @tablet-width) {
+  .catalog__container--item {
+    width: 328px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__container--item {
+    width: 245px;
+  }
 }
 
 @media (min-width: @tablet-width) {
