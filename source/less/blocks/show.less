@@ -1,8 +1,24 @@
+.show {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show::before {
+  display: block;
+  background-image: url("../img/icon-plus.svg");
+  width: 30px;
+  height: 30px;
+  content: "";
+}
+
 .show__title {
   margin: 0;
   text-align: center;
   padding-top: 80px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .show__notice {
@@ -26,7 +42,32 @@
     background-color: @white;
   }
 
+  .show::before {
+    width: 60px;
+    height: 60px;
+    margin-top: 56px;
+    margin-bottom: 48px;
+  }
+
+  .show__title {
+    padding-top: 0;
+    width: 146px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .show__notice {
+    width: 184px;
+    font-size: 16px;
+    letter-spacing: 1.75px;
+    padding-left: 4px;
+    line-height: 19px;
+    margin-top: 0;
+    margin-bottom: 88px;
+  }
+
   .show__button {
+    font-size: 16px;
     width: 249px;
   }
 }
