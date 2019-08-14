@@ -71,9 +71,29 @@
 }
 
 @media (min-width: @tablet-width) {
+  .extra__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .extra__header {
     font-size: 36px;
     margin-left: 37px;
+  }
+
+  .extra__header::after {
+    left: 333px;
+  }
+
+  .extra__box {
+    display: flex;
+    justify-content: space-between;
+    width: 632px;
+  }
+
+  .extra__button {
+    width: 632px;
   }
 }
 

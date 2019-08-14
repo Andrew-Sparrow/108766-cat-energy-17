@@ -1,12 +1,29 @@
 .promo {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  //outline: 1px solid @black;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  align-items: center;
-  //outline: 1px solid @black;
 }
+
+.promo__full {
+  background-color: @leaf;
+}
+
+/*
+.promo__full::before {
+  display: block;
+  content: "";
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: 10;
+}
+*/
 
 .promo__title {
   margin: 0;
@@ -44,6 +61,10 @@
     color: @black;
     align-items: flex-start;
     padding-left: 120px;
+  }
+
+  .promo__full {
+    background-color: @white;
   }
 
   .promo__title,
