@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+.extra__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .extra__header {
   position: relative;
   font-size: 24px;
@@ -34,7 +39,6 @@
   height: 3px;
   background-color: @leaf;
   margin-top: 15px;
-  margin-left: 25px;
   top: 0;
   right: 722px;
 }
@@ -123,11 +127,37 @@
 @media (min-width: @desktop-width) {
   .extra {
     padding-bottom: 85px;
-    margin-right: 40px;
     justify-content: space-between;
+  }
+
+  .extra__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .extra__item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .extra__item:nth-child(2) .extra__price {
+    padding-right: 5px;
+  }
+
+  .extra__name {
+    text-align: left;
   }
 
   .extra__container {
     width: 895px;
+  }
+
+  .extra__header::before {
+    right: 1205px;
+  }
+
+  .extra__button {
+    width: 245px;
+    margin-bottom: 0;
   }
 }
