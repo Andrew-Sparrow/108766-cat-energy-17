@@ -19,15 +19,7 @@
 .footer__box {
   position: relative;
   width: 100%;
-}
-
-.footer__box::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #cfcfcf;
-  z-index: 10;
+  border-bottom: 1px solid #cfcfcf;
 }
 
 .footer__social {
@@ -44,6 +36,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .footer__box {
+    width: initial;
+    border-bottom: none;
+  }
+
+  .footer__link {
+    display: inline-block;
+    padding-left: 0;
+  }
+
   .footer__img {
     padding: 0;
   }
