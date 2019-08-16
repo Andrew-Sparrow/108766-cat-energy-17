@@ -78,8 +78,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid @grizzly;
     border-bottom: 1px solid @grizzly;
+  }
+
+  .extra__item:nth-child(1) {
+    border-top: 1px solid @grizzly;
   }
 
   .extra__header {
@@ -138,6 +141,7 @@
   .extra__item {
     flex-direction: row;
     justify-content: space-between;
+    padding: 4px 0;
   }
 
   .extra__item:nth-child(2) .extra__price {
