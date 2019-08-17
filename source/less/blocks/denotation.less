@@ -59,11 +59,45 @@
 
 @media (min-width: @tablet-width) {
   .denotation {
+    width: 581px;
     margin-bottom: 81px;
   }
 
   .denotation__item {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .denotation::after {
+    width: 428px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #dcdcdc;
+    top: 8px;
+    left: 75px;
+  }
+
+  .denotation__item:nth-child(1)::after {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 7px;
+    left: 274px;
+  }
+
+  .denotation__item:nth-child(1)::before {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    content: "";
+    width: 34px;
+    height: 34px;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    background-color: @white;
+    top: -7px;
+    left: 260px;
+    z-index: 10;
+    box-shadow: 1px 1px @graylight;
   }
 }
