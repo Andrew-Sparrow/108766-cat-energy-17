@@ -55,15 +55,8 @@
 .series__paragraph {
   margin: 0;
   margin-bottom: 19px;
-}
-
-.series__paragraph::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: @gray;
-  margin-top: 21px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid @gray;
 }
 
 .series__title::before {
@@ -94,7 +87,6 @@
 }
 
 .series__item:nth-child(2) .series__title::after {
-
   top: 36px;
   left: 13px;
   width: 67px;
@@ -126,10 +118,33 @@
     left: 450px;
   }
 
+  .series__item:nth-child(2) .series__title::before {
+    top: 24px;
+    left: 450px;
+  }
+
+  .series__item:nth-child(1) .series__title::after {
+    top: 18px;
+    left: 480px;
+    width: 140px;
+    height: 194px;
+  }
+
+  .series__item:nth-child(2) .series__title::after {
+    top: 66px;
+    left: 417px;
+    width: 268px;
+    height: 112px;
+  }
+
   .series__title {
     padding-top: 82px;
     padding-left: 0;
-    padding-bottom: 75px;
+    padding-bottom: 25px;
+  }
+
+  .series__paragraph {
+    border-bottom: none;
   }
 
   .series__link {
