@@ -85,6 +85,10 @@
     flex-wrap: wrap;
   }
 
+  .work__full {
+    border-bottom: 1px solid @gray;
+  }
+
   .work__list {
     width: 100%;
   }
@@ -110,8 +114,23 @@
     &:nth-child(even) {
       margin-right: auto;
     }
-  }
 
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
 
   .work__paragraph {
     margin: 0;
@@ -136,7 +155,8 @@
   .work__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-top: 0;
+    margin-bottom: 194px;
   }
 }
 
