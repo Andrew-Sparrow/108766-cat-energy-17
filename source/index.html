@@ -71,7 +71,7 @@
         </a>
       </li>
     </ul>
-    <div class="full work__full">
+    <section class="full">
       <div class="work container wrapper">
         <h3 class="headline work__title">Как это работает</h3>
         <ul class="work__list">
@@ -93,11 +93,11 @@
           <li class="work__item">
             <p class="work__paragraph">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-            <p class="work__paragraph">
+            </p>
           </li>
         </ul>
       </div>
-    </div>
+    </section>
     <div class="example">
       <div class="example__container example__container--heading">
         <h3 class="headline example__heading container">
@@ -132,7 +132,11 @@
         </div>
         <div class="example__container example__container--before">
           <div class="example__before-after container">
-            <img class="example__picture" src="../img/before-mobile@1x.png" width="320" height="240" alt="Кот толстый">
+            <picture class="example__picture">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+              <img class="example__img" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот толстый">
+            </picture>
             <div class="denotation">
               <p class="denotation__item">Было</p>
               <p class="denotation__item">Стало</p>
