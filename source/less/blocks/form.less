@@ -12,3 +12,28 @@
 .form__note {
   margin: 0;
 }
+
+.form__container {
+  width: @phone-width;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .form__title {
+    font-size: 60px;
+  }
+
+  .form__container {
+    width: @tablet-width;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__container {
+    width: @desktop-width;
+    padding: 0 40px;
+  }
+}

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<section class="full__form">
   <header class="header container wrapper">
     <a class="header__link">
       <picture class="product__picture">
@@ -37,32 +38,49 @@
       </div>
     </nav>
   </header>
+</section>
   <main class="form">
-    <div class="container">
+    <div class="form__container">
       <h1 class="headline form__title">Подбор программы</h1>
-      <form name="choice_program" action=" https://echo.htmlacademy.ru" method="post">
-        <h3 class="form__plea">Заполните анкету и мы подберем программу питания для вашего кота</h3>
-        <label class="form__label" for="name">Имя:*</label>
-        <input class="form__signature" id="name" type="text" name="name" placeholder="Барсик">
-        <label class="form__label" for="weight">Вес (кг):*</label>
-        <input class="form__signature" id="weight" type="text" name="weight" placeholder="7">
-        <label class="form__label" for="age">Возраст (лет):</label>
-        <input class="form__signature" id="age" type="text" name="age" placeholder="7">
-        <label class="form__label" for="thin">Похудение</label>
-        <input class="form__signature" id="thin" type="radio" name="thin" checked>
-        <label class="form__label" for="fat">Набор массы</label>
-        <input class="form__signature" id="fat" type="radio" name="fat">
-        <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label>
-        <input class="form__signature" id="advice" type="radio" name="advice">
+    </div>
+    <form name="choice_program" action=" https://echo.htmlacademy.ru" method="post">
+      <section class="form__selection">
+        <div class="full__form">
+          <div class="form__container">
+            <h3 class="form__plea">Заполните анкету и мы подберем программу питания для вашего кота</h3>
+            <label class="form__label" for="name">Имя:*</label>
+            <input class="form__signature" id="name" type="text" name="name" placeholder="Барсик">
+            <label class="form__label" for="weight">Вес (кг):*</label>
+            <input class="form__signature" id="weight" type="text" name="weight" placeholder="7">
+            <label class="form__label" for="age">Возраст (лет):</label>
+            </div>
+        </div>
+        <div class="full__form">
+          <div class="form__container">
+            <input class="form__signature" id="age" type="text" name="age" placeholder="7">
+            <label class="form__label" for="thin">Похудение</label>
+            <input class="form__signature" id="thin" type="radio" name="thin" checked>
+            <label class="form__label" for="fat">Набор массы</label>
+            <input class="form__signature" id="fat" type="radio" name="fat">
+            <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label>
+            <input class="form__signature" id="advice" type="radio" name="advice">
+          </div>
+        </div>
+      </section>
+      <section class="form__container">
         <h3 class="heading">Контактные данные(владельца кота)</h3>
         <label class="form__label" for="email">E-mail:*</label>
         <input class="form__signature" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
         <label class="form__label" for="phone">Телефон:*</label>
         <input class="form__signature" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+      </section>
+      <section class="form__container">
         <h3 class="heading">Комментарий</h3>
         <textarea class="form__textarea" id="story" name="story" rows="5" cols="33">
               Расскажите обо всех повадках кота
         </textarea>
+      </section>
+      <section class="form__container">
         <h3 class="heading">Дополнительно</h3>
         <label class="form__label" for="sugar">Сахарозаменитель</label>
         <input class="form__signature" id="sugar" type="checkbox" name="sugar" checked>
@@ -74,8 +92,8 @@
         <input class="form__signature" id="vitamin" type="checkbox" name="milk">
         <input class="form__signature" type="submit" value="Отправить заявку">
         <p class="form__note">* — Обязательные поля</p>
-      </form>
-    </div>
+      </section>
+    </form>
     <div class="collaborate">
       <div class="collaborate__box collaborate--background">
         <div class="collaborate__container container">
