@@ -1,5 +1,6 @@
 .total {
   position: relative;
+  background-size: 300px 100px;
 }
 
 .total::before {
@@ -13,5 +14,11 @@
 @media (min-width: @tablet-width) {
   .total::before {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .total {
+    background: linear-gradient(to left, @darkleaf 50%, transparent 50%);
   }
 }

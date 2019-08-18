@@ -201,17 +201,41 @@
   }
 
   .work__list {
-    margin-left: -80px;
     justify-content: space-between;
-    padding-bottom: 90px;
+    margin-bottom: 135px;
   }
 
   .work__item:nth-child(2n) {
-    margin-left: 80px;
+    margin-left: 0;
   }
 
   .work__item {
-    margin-left: 80px;
-    margin-right: 0;
+    width: 245px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &:nth-child(odd) {
+      width: 245px;
+    }
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    &:nth-child(1) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
   }
 }
