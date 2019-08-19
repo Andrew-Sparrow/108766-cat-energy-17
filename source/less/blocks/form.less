@@ -2,11 +2,51 @@
   box-sizing: border-box;
 }
 
+.form__title {
+  margin-top: 33px;
+  margin-bottom: 35px;
+}
+
+//title
 .form__plea {
+  width: 228px;
+  margin: 0;
+  margin-bottom: 20px;
   font-family: @font-oswald;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+}
+
+// list of form
+.form__data {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.form__input {
+  display: flex;
+}
+
+.form__label {
+  font-family: @font-oswald;
+  font-size: 16px;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.form__signature {
+  width: auto;
+  font-family: @font-oswald;
+  font-size: 16px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid @grizzly;
+  text-transform: uppercase;
 }
 
 .form__note {
@@ -14,6 +54,8 @@
 }
 
 .form__container {
+  display: flex;
+  flex-direction: column;
   width: @phone-width;
   box-sizing: border-box;
   padding: 0 20px;
@@ -28,6 +70,10 @@
   .form__container {
     width: @tablet-width;
     padding: 0 30px;
+  }
+
+  .form__label {
+    font-size: 20px;
   }
 }
 

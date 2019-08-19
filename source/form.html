@@ -47,17 +47,27 @@
       <section class="form__selection">
         <div class="full__form">
           <div class="form__container">
-            <h3 class="form__plea">Заполните анкету и мы подберем программу питания для вашего кота</h3>
-            <label class="form__label" for="name">Имя:*</label>
-            <input class="form__signature" id="name" type="text" name="name" placeholder="Барсик">
-            <label class="form__label" for="weight">Вес (кг):*</label>
-            <input class="form__signature" id="weight" type="text" name="weight" placeholder="7">
-            <label class="form__label" for="age">Возраст (лет):</label>
-            </div>
+            <p class="form__plea">
+              Заполните анкету и мы подберем программу питания для вашего кота
+            </p>
+            <ul class="form__data">
+              <li class="form__input">
+                <label class="form__label" for="name">Имя:*</label>
+                <input class="form__signature" id="name" type="text" name="name" placeholder="Барсик">
+              </li>
+              <li class="form__data">
+                <label class="form__label" for="weight">Вес (кг):*</label>
+                <input class="form__signature" id="weight" type="text" name="weight" placeholder="7">
+              </li>
+              <li>
+                <label class="form__label" for="age">Возраст (лет):</label>
+                <input class="form__signature" id="age" type="text" name="age" placeholder="7">
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="full__form">
           <div class="form__container">
-            <input class="form__signature" id="age" type="text" name="age" placeholder="7">
             <label class="form__label" for="thin">Похудение</label>
             <input class="form__signature" id="thin" type="radio" name="thin" checked>
             <label class="form__label" for="fat">Набор массы</label>
@@ -82,16 +92,22 @@
       </section>
       <section class="form__container">
         <h3 class="heading">Дополнительно</h3>
-        <label class="form__label" for="sugar">Сахарозаменитель</label>
-        <input class="form__signature" id="sugar" type="checkbox" name="sugar" checked>
-        <label class="form__label" for="water">Питьевая вода</label>
-        <input class="form__signature" id="water" type="checkbox" name="water">
-        <label class="form__label" for="milk">Молоко</label>
-        <input class="form__signature" id="milk" type="checkbox" name="milk">
-        <label class="form__label" for="vitamin">Витамины</label>
-        <input class="form__signature" id="vitamin" type="checkbox" name="milk">
-        <input class="form__signature" type="submit" value="Отправить заявку">
-        <p class="form__note">* — Обязательные поля</p>
+        <div class="form__extra">
+          <label class="form__label" for="sugar">Сахарозаменитель</label>
+          <input class="form__signature" id="sugar" type="checkbox" name="sugar" checked>
+          <label class="form__label" for="water">Питьевая вода</label>
+          <input class="form__signature" id="water" type="checkbox" name="water">
+        </div>
+        <div class="form__extra">
+          <label class="form__label" for="milk">Молоко</label>
+          <input class="form__signature" id="milk" type="checkbox" name="milk">
+          <label class="form__label" for="vitamin">Витамины</label>
+          <input class="form__signature" id="vitamin" type="checkbox" name="milk">
+        </div>
+        <div class="form__submit">
+          <input class="form__signature" type="submit" value="Отправить заявку">
+          <p class="form__note">* — Обязательные поля</p>
+        </div>
       </section>
     </form>
     <div class="collaborate">
