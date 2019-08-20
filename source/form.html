@@ -40,58 +40,77 @@
   </header>
 </section>
   <main class="form">
-    <div class="form__container">
+    <div class="form__container form__container--title">
       <h1 class="headline form__title">Подбор программы</h1>
     </div>
     <form name="choice_program" action=" https://echo.htmlacademy.ru" method="post">
       <section class="form__selection">
-        <div class="full__form">
-          <div class="form__container">
+        <div class="full__form full__form--part">
+          <div class="form__container form__container--part">
             <p class="form__plea">
               Заполните анкету и мы подберем программу питания для вашего кота
             </p>
-            <ul class="form__data">
+            <ul class="form__inputs">
               <li class="form__input">
-                <label class="form__label" for="name">Имя:*</label>
-                <input class="form__signature" id="name" type="text" name="name" placeholder="Барсик">
+                <label class="form__label" for="name">
+                  Имя:*
+                </label>
+                <input class="form__field" id="name" type="text" name="name" placeholder="Барсик">
               </li>
-              <li class="form__data">
-                <label class="form__label" for="weight">Вес (кг):*</label>
-                <input class="form__signature" id="weight" type="text" name="weight" placeholder="7">
+              <li class="form__input">
+                <label class="form__label" for="weight">
+                  Вес (кг):*
+                </label>
+                <input class="form__field" id="weight" type="text" name="weight" placeholder="7">
               </li>
-              <li>
-                <label class="form__label" for="age">Возраст (лет):</label>
-                <input class="form__signature" id="age" type="text" name="age" placeholder="7">
+              <li class="form__input form__input--last">
+                <label class="form__label" for="age">
+                  Возраст (лет):
+                </label>
+                <input class="form__field" id="age" type="text" name="age" placeholder="7">
               </li>
             </ul>
           </div>
         </div>
-        <div class="full__form">
-          <div class="form__container">
-            <label class="form__label" for="thin">Похудение</label>
-            <input class="form__signature" id="thin" type="radio" name="thin" checked>
-            <label class="form__label" for="fat">Набор массы</label>
-            <input class="form__signature" id="fat" type="radio" name="fat">
-            <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label>
-            <input class="form__signature" id="advice" type="radio" name="advice">
+        <div class="full__form full__form--part">
+          <div class="form__container form__container--part">
+            <ul class="form__radiobuttons">
+              <li class="form_radiobutton">
+                <input class="form__radio" id="thin" type="radio" name="weight" checked>
+                <label class="form__label form__label--radio" for="thin">Похудение</label>
+              </li>
+              <li class="form__radiobutton">
+                <input class="form__radio" id="fat" type="radio" name="weight">
+                <label class="form__label form__label--radio" for="fat">Набор массы</label>
+              </li>
+              <li class="form__radiobutton">
+                <input class="form__radio" id="advice" type="radio" name="weight">
+                <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
       <section class="form__container">
-        <h3 class="heading">Контактные данные(владельца кота)</h3>
-        <label class="form__label" for="email">E-mail:*</label>
-        <input class="form__signature" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
-        <label class="form__label" for="phone">Телефон:*</label>
-        <input class="form__signature" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+        <h3 class="form__heading">Контактные данные(владельца кота)</h3>
+        <ul class="form__contacts">
+          <li class="form__input">
+            <label class="form__label" for="email">E-mail:*</label>
+            <input class="form__field" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
+          </li>
+          <li class="form__input">
+            <label class="form__label" for="phone">Телефон:*</label>
+            <input class="form__field" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+          </li>
+        </ul>
       </section>
       <section class="form__container">
-        <h3 class="heading">Комментарий</h3>
-        <textarea class="form__textarea" id="story" name="story" rows="5" cols="33">
-              Расскажите обо всех повадках кота
+        <h3 class="form__heading">Комментарий</h3>
+        <textarea class="form__textarea" id="story" name="story" rows="5" cols="33">Расскажите обо всех повадках кота
         </textarea>
       </section>
       <section class="form__container">
-        <h3 class="heading">Дополнительно</h3>
+        <h3 class="form__heading">Дополнительно</h3>
         <div class="form__extra">
           <label class="form__label" for="sugar">Сахарозаменитель</label>
           <input class="form__signature" id="sugar" type="checkbox" name="sugar" checked>
