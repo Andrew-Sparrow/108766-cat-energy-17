@@ -111,20 +111,35 @@
       </section>
       <section class="form__container">
         <h3 class="form__heading">Дополнительно</h3>
-        <div class="form__extra">
-          <label class="form__label" for="sugar">Сахарозаменитель</label>
-          <input class="form__signature" id="sugar" type="checkbox" name="sugar" checked>
-          <label class="form__label" for="water">Питьевая вода</label>
-          <input class="form__signature" id="water" type="checkbox" name="water">
-        </div>
-        <div class="form__extra">
-          <label class="form__label" for="milk">Молоко</label>
-          <input class="form__signature" id="milk" type="checkbox" name="milk">
-          <label class="form__label" for="vitamin">Витамины</label>
-          <input class="form__signature" id="vitamin" type="checkbox" name="milk">
-        </div>
+        <ul class="form__extras">
+          <li class="form__group">
+            <ul class="form__checkboxes">
+              <li class="form__checkbox">
+                <input class="form__check" id="sugar" type="checkbox" name="sugar" checked>
+                <label class="form__label form__label--check" for="sugar">Сахарозаменитель</label>
+              </li>
+              <li class="form__checkbox">
+                <input class="form__check" id="water" type="checkbox" name="water">
+                <label class="form__label form__label--check" for="water">Питьевая вода</label>
+              </li>
+            </ul>
+          </li>
+          <li class="form__group">
+          <li>
+            <ul class="form__checkboxes">
+              <li class="form__checkbox">
+                <input class="form__check" id="milk" type="checkbox" name="milk">
+                <label class="form__label form__label--check" for="milk">Молоко</label>
+              </li>
+              <li class="form__checkbox">
+                <input class="form__check" id="vitamin" type="checkbox" name="milk">
+                <label class="form__label form__label--check" for="vitamin">Витамины</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
         <div class="form__submit">
-          <input class="form__signature" type="submit" value="Отправить заявку">
+          <input class="button form__button" type="submit" value="Отправить заявку">
           <p class="form__note">* — Обязательные поля</p>
         </div>
       </section>

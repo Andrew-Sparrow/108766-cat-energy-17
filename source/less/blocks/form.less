@@ -20,6 +20,8 @@
 }
 
 // lists
+.form__checkboxes,
+.form__extras,
 .form__contacts,
 .form__inputs,
 .form__radiobuttons {
@@ -56,6 +58,7 @@
   margin-right: 10px;
 }
 
+.form__label--check,
 .form__label--radio {
   display: inline-block;
   position: relative;
@@ -143,6 +146,49 @@
   resize: none;
 }
 
+.form__label--check {
+  margin-left: 45px;
+  margin-right: 0;
+}
+
+.form__check {
+  display: none;
+}
+
+.form__check:checked + .form__label--check::before,
+.form__check:not(:checked) + .form__label--check::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -48px;
+  top: -8px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form__check:checked + .form__label--check::after {
+  content: "";
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  position: absolute;
+  top: -1px;
+  left: -42px;
+  transition: all 0.2s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.form__check:not(:checked) + .form__label--check::after {
+  opacity: 0;
+  transform: scale(0);
+}
+
 @media (min-width: @tablet-width) {
   .form__title {
     font-size: 60px;
@@ -203,6 +249,16 @@
     height: 18px;
     top: 3px;
     left: -46px;
+  }
+
+  .form__checkboxes,
+  .form__extras {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__label--check {
+    margin-left: 58px;
   }
 }
 
