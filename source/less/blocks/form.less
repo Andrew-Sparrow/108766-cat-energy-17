@@ -1,5 +1,6 @@
 .form {
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .form__title {
@@ -34,14 +35,16 @@
 .form__radiobuttons {
   margin-left: 47px;
   margin-top: 25px;
+  margin-bottom: 29px;
 }
 
 .form__inputs {
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 22px;
 }
 
 .form__input {
+  position: relative;
   display: flex;
   margin-bottom: 10px;
 }
@@ -89,7 +92,7 @@
   height: 12px;
   background: @leaf;
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: -38px;
   border-radius: 100%;
   transition: all 0.2s ease;
@@ -114,8 +117,31 @@
   flex-grow: 1;
 }
 
+.form__phone,
+.form__mail {
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+.form__mail {
+  top: 8px;
+  left: 254px;
+}
+
+.form__phone {
+  top: 5px;
+  left: 254px;
+}
+
+.form__phone path,
+.form__mail path {
+  fill: #444444;
+}
+
 .form__note {
   margin: 0;
+  text-align: center;
 }
 
 .form__container {
@@ -128,10 +154,33 @@
 }
 
 .form__heading {
+  display: inline-block;
+  position: relative;
   font-size: 24px;
   line-height: 24px;
-  text-transform: uppercase;
   font-weight: 400;
+}
+
+.form__heading::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 9999px;
+  height: 3px;
+  background-color: #68b738;
+  top: 14px;
+}
+
+.form__heading--contact::after {
+  left: 200px;
+}
+
+.form__heading--comment::after {
+  left: 143px;
+}
+
+.form__heading--extra::after {
+  left: 162px;
 }
 
 .form__textarea {
@@ -144,6 +193,10 @@
   text-transform: uppercase;
   color: #444444;
   resize: none;
+}
+
+.form__extras {
+  margin-bottom: 42px;
 }
 
 .form__label--check {
@@ -189,6 +242,18 @@
   transform: scale(0);
 }
 
+.form--last {
+  margin-bottom: 0;
+}
+
+.form__submit {
+  margin-bottom: 35px;
+}
+
+.form__button {
+  margin-bottom: 24px;
+}
+
 @media (min-width: @tablet-width) {
   .form__title {
     font-size: 60px;
@@ -227,6 +292,7 @@
     padding-top: 17px;
     padding-bottom: 17px;
     margin-bottom: 20px;
+    color: #444444;
   }
 
   .form__radiobuttons {
@@ -298,11 +364,5 @@
 
   .form__plea {
     margin-bottom: 70px;
-  }
-
-  .form__input--last .form__field,
-  .form__input--last,
-  .form__inputs {
-    margin-bottom: 0;
   }
 }
