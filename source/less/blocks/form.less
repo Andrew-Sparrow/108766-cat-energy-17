@@ -247,6 +247,8 @@
 }
 
 .form__submit {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 35px;
 }
 
@@ -269,10 +271,46 @@
     padding: 0 30px;
   }
 
+  .form__heading {
+    font-size: 36px;
+  }
+
+  .form__heading::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 9999px;
+    height: 3px;
+    background-color: #68b738;
+    top: 14px;
+    right: 665px;
+  }
+
+  .form__heading--contact {
+    margin-bottom: 70px;
+  }
+
+  .form__heading--comment {
+    margin-bottom: 75px;
+  }
+
+  .form__heading--contact::after {
+    left: 542px;
+  }
+
+  .form__heading--comment::after {
+    left: 213px;
+  }
+
+  .form__heading--extra::after {
+    left: 236px;
+  }
+
   .form__plea {
     width: 325px;
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 69px;
   }
 
   .form__label {
@@ -285,20 +323,33 @@
 
   .form__input {
     font-size: 20px;
+    margin-bottom: 20px;
   }
 
   .form__field {
     padding-left: 20px;
     padding-top: 17px;
     padding-bottom: 17px;
-    margin-bottom: 20px;
     color: #444444;
+  }
+
+  .form__mail {
+    top: 18px;
+    left: 254px;
+  }
+
+  .form__phone {
+    top: 18px;
+    left: 254px;
   }
 
   .form__radiobuttons {
     width: 100%;
-    padding-top: 28px;
-    padding-left: 81px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 94px;
+    margin-top: 0;
+    margin-left: 0;
     border: 1px solid @gray;
   }
 
@@ -325,6 +376,50 @@
 
   .form__label--check {
     margin-left: 58px;
+    margin-bottom: 40px;
+  }
+
+  .form__textarea {
+    min-height: 174px;
+    margin-bottom: 70px;
+  }
+
+  .form__heading--extra {
+    margin-bottom: 62px;
+  }
+
+  .form__extras {
+    flex-direction: row;
+  }
+
+  .form__checkboxes {
+    width: 280px;
+  }
+
+  .form__checkboxes--right {
+    margin-left: 54px;
+  }
+
+  .form__checkbox:nth-child(2) .form__label {
+    margin-bottom: 0;
+  }
+
+  .form__submit {
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+
+  .form__button {
+    width: 283px;
+    margin-bottom: 0;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+
+  .form__note {
+    margin-left: 60px;
+    margin-top: 6px;
+    margin-bottom: 0;
   }
 }
 
