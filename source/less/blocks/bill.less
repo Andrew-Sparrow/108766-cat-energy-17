@@ -11,16 +11,37 @@
   line-height: 24px;
   text-transform: uppercase;
   color: inherit;
+  cursor: default;
 }
 
-.bill__link:hover {
+.bill .bill__link--active {
   border-bottom: 2px solid @leaf;
   padding-bottom: 14px;
+  cursor: default;
 }
 
-.bill--color .bill__link:hover {
+.bill--color .bill__link--active {
   border-bottom: 2px solid @white;
+  cursor: default;
+}
+
+.bill .bill__link--hover:active {
+  opacity: 0.5;
+}
+
+.bill__link--hover:hover {
+  border-bottom: 2px solid @leaf;
   padding-bottom: 14px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.bill--color .bill__link--hover:hover {
+  border-bottom: 2px solid @white;
+}
+
+.bill--color .bill__link--hover:active {
+  opacity: 0.5;
 }
 
 .bill__item {
