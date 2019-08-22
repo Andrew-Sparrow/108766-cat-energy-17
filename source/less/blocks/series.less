@@ -52,6 +52,24 @@
   background-image: url("../img/icon-right-arrow-long.svg");
 }
 
+.series__link:hover.series__link::after {
+  width: 33px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+}
+
+.series__link:active,
+.series__link:active.series__link::after {
+  opacity: 0.5;
+}
+
+
+.series__arrow {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 119px;
+}
+
 .series__paragraph {
   margin: 0;
   margin-bottom: 19px;
@@ -223,3 +241,4 @@
     width: 444px;
   }
 }
+

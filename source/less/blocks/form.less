@@ -100,6 +100,15 @@
   transform: scale(1);
 }
 
+.form__label:hover.form__label--radio::before {
+  border-color: #bcbcbc;
+}
+
+.form__label:active.form__label--radio::after,
+.form__label:active.form__label--radio::before {
+  opacity: 0.5;
+}
+
 .form__radio:not(:checked) + .form__label--radio::after {
   opacity: 0;
   transform: scale(0);
@@ -107,6 +116,7 @@
 
 .form__field {
   width: auto;
+  box-sizing: border-box;
   font-family: @font-oswald;
   font-size: 16px;
   padding-left: 5px;
@@ -115,6 +125,35 @@
   border: 1px solid @grizzly;
   text-transform: uppercase;
   flex-grow: 1;
+}
+
+.form__field:hover {
+  border-color: #cdcdcd;
+}
+
+.form__field:hover + .form__phone path,
+.form__field:hover + .form__mail path {
+  fill: @leaf;
+}
+
+.form__field--error:hover {
+  border-color: #ff8282;
+}
+
+.form__field--error + .form__phone path,
+.form__field--error + .form__mail path {
+  fill: #ff8282;
+}
+
+.form__field:focus {
+  border-width: 2px;
+  border-color: #444444;
+  outline: none;
+}
+
+.form__field--error {
+  border-width: 2px;
+  border-color: #ff8282;
 }
 
 .form__phone,
@@ -397,6 +436,16 @@
 
   .form__checkboxes {
     width: 280px;
+  }
+
+  .form__label--check:hover.form__label--check::before {
+    border-color: #bababa;
+    cursor: pointer;
+  }
+
+  .form__label--check:active.form__label--check,
+  .form__label--check:active.form__label--check::before {
+    opacity: 0.5;
   }
 
   .form__checkboxes--right {

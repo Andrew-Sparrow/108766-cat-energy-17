@@ -60,6 +60,15 @@
     border-bottom: 1px dotted @gray;
   }
 
+  .denotation__item:hover {
+    border-bottom: 1px solid #989898;
+    cursor: pointer;
+  }
+
+  .denotation__item:active {
+    border-bottom: none;
+  }
+
   .denotation__bar {
     width: 428px;
     margin-top: -12px;
@@ -86,13 +95,22 @@
     height: 33px;
     cursor: pointer;
     box-sizing: border-box;
-    border: 13px solid @white;
+    border: 11px solid @white;
     border-radius: 50%;
     background-color: @leaf;
-    box-shadow:
-      0 0 0 1px @gray,
+    box-shadow: 0 0 0 1px @gray,
       1px 3px 5px @gray;
     margin-top: -14px;
+  }
+
+  .denotation__slider::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 1px @gray,
+      1px 3px 5px @lightblack;
+  }
+
+  .denotation__slider::-webkit-slider-thumb:active {
+    box-shadow: 0 0 0 1px @leaf,
+    1px 3px 5px @lightblack;
   }
 }
 
