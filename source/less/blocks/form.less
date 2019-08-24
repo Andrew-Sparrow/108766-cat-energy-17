@@ -20,6 +20,14 @@
   text-transform: uppercase;
 }
 
+.form__label,
+.form__note,
+.form__heading,
+.form__plea {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 // lists
 .form__checkboxes,
 .form__extras,
@@ -59,6 +67,10 @@
   text-transform: uppercase;
   align-self: center;
   margin-right: 10px;
+}
+
+.form__label--check {
+  width: 180px;
 }
 
 .form__label--check,
@@ -452,10 +464,6 @@
     margin-left: 54px;
   }
 
-  .form__checkbox:nth-child(2) .form__label {
-    margin-bottom: 0;
-  }
-
   .form__submit {
     flex-direction: row;
     margin-bottom: 70px;
@@ -518,6 +526,10 @@
     margin-bottom: 0;
   }
 
+  .form__radiobutton:last-child .form__label {
+    margin-bottom: 0;
+  }
+
   .form__heading::before {
     right: 1253px;
   }
@@ -536,14 +548,19 @@
     margin-bottom: 33px;
   }
 
-  .form__inputs,
-  .form--last {
+  .form__inputs {
+    margin-bottom: 0;
+  }
+
+  .form__input:last-child {
     margin-bottom: 0;
   }
 
   .form__contacts {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .form__input--contact {
