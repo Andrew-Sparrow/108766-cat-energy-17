@@ -69,10 +69,6 @@
   margin-right: 10px;
 }
 
-.form__label--check {
-  width: 180px;
-}
-
 .form__label--check,
 .form__label--radio {
   display: inline-block;
@@ -252,6 +248,7 @@
 }
 
 .form__label--check {
+  width: 180px;
   margin-left: 45px;
   margin-right: 0;
 }
@@ -427,6 +424,10 @@
     flex-direction: column;
   }
 
+  .form__checkbox:nth-child(2n) {
+    margin-left: 55px;
+  }
+
   .form__label--check {
     margin-left: 58px;
     margin-bottom: 40px;
@@ -443,7 +444,9 @@
   }
 
   .form__extras {
+    width: 539px;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .form__checkboxes {
@@ -458,10 +461,6 @@
   .form__label--check:active.form__label--check,
   .form__label--check:active.form__label--check::before {
     opacity: 0.5;
-  }
-
-  .form__checkboxes--right {
-    margin-left: 54px;
   }
 
   .form__submit {
@@ -526,10 +525,6 @@
     margin-bottom: 0;
   }
 
-  .form__radiobutton:last-child .form__label {
-    margin-bottom: 0;
-  }
-
   .form__heading::before {
     right: 1253px;
   }
@@ -546,6 +541,11 @@
 
   .form__label--radio {
     margin-bottom: 33px;
+  }
+
+  .form__radiobutton:last-child,
+  .form__radiobutton:last-child .form__label {
+    margin-bottom: 0;
   }
 
   .form__inputs {
@@ -568,26 +568,29 @@
   }
 
   .form__extras {
-    width: 1130px;
+    width: 1300px;
     margin-bottom: 74px;
+    margin-left: -80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .form__label--check {
     margin-bottom: 0;
+    margin-left: 50px;
   }
 
-  .form__checkboxes {
-    width: initial;
-    display: flex;
-    flex-direction: row;
+  .form__checkbox:last-child,
+  .form__checkbox:last-child .form__label--check {
+    margin-bottom: 0;
   }
 
   .form__checkbox {
-    width: 325px;
-  }
-
-  .form__checkboxes--right {
-    margin-left: 0;
+    width: 245px;
+    margin-bottom: 20px;
+    margin-left: 80px;
   }
 
   .form__button {
