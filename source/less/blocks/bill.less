@@ -5,6 +5,7 @@
 }
 
 .bill__link {
+  display: inline-block;
   text-decoration: none;
   font-family: @font-oswald;
   font-size: 18px;
@@ -12,6 +13,9 @@
   text-transform: uppercase;
   color: inherit;
   cursor: default;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .bill__link--hover:hover,
@@ -48,13 +52,26 @@
 
 @media (min-width: @tablet-width) {
   .bill {
-    width: 439px;
+    width: 516px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style: none;
     margin: 0;
     padding: 0;
     margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  .bill__link {
+    width: 155px;
+  }
+
+  .bill--color .bill__link--active {
+    border-bottom: 2px solid @leaf;
+  }
+
+  .bill__item:nth-child(1) .bill__link {
+    width: 64px;
   }
 
   .bill__item:nth-last-child(1) {
@@ -64,14 +81,23 @@
 
 @media (min-width: @desktop-width) {
   .bill {
-    width: 484px;
+    width: 666px;
     position: relative;
     z-index: 100;
+    justify-content: flex-end;
   }
 
   .bill__link {
+    width: 180px;
     font-size: 20px;
-    line-height: 60px;
+  }
+
+  .bill--color .bill__link--active {
+    border-bottom: 2px solid @white;
+  }
+
+  .bill__item:nth-child(1) .bill__link {
+    width: 73px;
   }
 
   .bill--color {
