@@ -1,52 +1,38 @@
 .bill {
-  display: none;
-  width: 442px;
   color: @black;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bill__item {
+  border-bottom: 1px solid @gray;
+}
+
+.bill__item:first-child {
+  border-top: 1px solid @gray;
 }
 
 .bill__link {
-  display: inline-block;
+  display: block;
+  width: 320px;
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
   text-decoration: none;
   font-family: @font-oswald;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   color: inherit;
+  text-align: center;
   cursor: default;
   overflow-wrap: break-word;
   word-wrap: break-word;
-}
-
-.bill__link--hover:hover,
-.bill .bill__link--active {
-  padding-bottom: 14px;
-}
-
-.bill .bill__link--active {
-  border-bottom: 2px solid @leaf;
-  cursor: default;
-}
-
-.bill--color .bill__link--active {
-  border-bottom: 2px solid @white;
-  cursor: default;
-}
-
-.bill .bill__link--hover:active {
-  opacity: 0.5;
-}
-
-.bill__link--hover:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.bill--color .bill__link--hover:active {
-  opacity: 0.5;
-}
-
-.bill__item {
-  margin-right: 10px;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,29 +47,71 @@
     flex-wrap: wrap;
   }
 
-  .bill__link {
-    width: 155px;
+  .bill__item {
+    border-bottom: none;
   }
 
-  .bill--color .bill__link--active {
-    border-bottom: 2px solid @leaf;
+  .bill__item:first-child {
+    border-top: none;
+    margin-right: 36px;
+  }
+
+  .bill__item:nth-child(2) {
+    margin-right: 40px;
   }
 
   .bill__item:nth-child(1) .bill__link {
-    width: 64px;
+    width: 75px;
   }
 
   .bill__item:nth-last-child(1) {
     margin-right: 0;
   }
+
+  .bill__link {
+    width: 166px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .bill .bill__link--active {
+    padding-bottom: 14px;
+    border-bottom: 2px solid @leaf;
+    cursor: default;
+  }
+
+  .bill--color .bill__link--active {
+    border-bottom: 2px solid @white;
+    cursor: default;
+  }
+
+  .bill .bill__link--hover:active {
+    opacity: 0.5;
+  }
+
+  .bill__link--hover:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .bill--color .bill__link--hover:active {
+    opacity: 0.5;
+  }
+
+  .bill--color .bill__link--active {
+    border-bottom: 2px solid @leaf;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .bill {
-    width: 666px;
     position: relative;
     z-index: 100;
     justify-content: flex-end;
+  }
+
+  .bill__item:nth-child(2) {
+    margin-right: 33px;
   }
 
   .bill__link {
