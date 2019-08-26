@@ -43,7 +43,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 16px;
+    margin-top: 24px;
     flex-wrap: wrap;
   }
 
@@ -53,19 +53,20 @@
 
   .bill__item:first-child {
     border-top: none;
-    margin-right: 36px;
+    margin-right: 27px;
   }
 
   .bill__item:nth-child(2) {
-    margin-right: 40px;
+    margin-right: 23px;
   }
 
   .bill__item:nth-child(1) .bill__link {
-    width: 75px;
+    width: 64px;
   }
 
   .bill__item:nth-last-child(1) {
     margin-right: 0;
+    padding-right: 9px;
   }
 
   .bill__link {
@@ -74,16 +75,18 @@
     padding-right: 0;
   }
 
+  .bill--color .bill__link--active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid @white;
+    cursor: default;
+  }
+
   .bill .bill__link--active {
-    padding-bottom: 14px;
+    padding-bottom: 8px;
     border-bottom: 2px solid @leaf;
     cursor: default;
   }
 
-  .bill--color .bill__link--active {
-    border-bottom: 2px solid @white;
-    cursor: default;
-  }
 
   .bill .bill__link--hover:active {
     opacity: 0.5;
