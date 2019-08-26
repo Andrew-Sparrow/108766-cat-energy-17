@@ -4,7 +4,7 @@
 }
 
 .form__title {
-  margin-top: 33px;
+  margin-top: 24px;
   margin-bottom: 35px;
 }
 
@@ -12,7 +12,7 @@
 .form__plea {
   width: 228px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 38px;
   font-family: @font-oswald;
   font-weight: 400;
   font-size: 14px;
@@ -42,19 +42,24 @@
 
 .form__radiobuttons {
   margin-left: 47px;
-  margin-top: 25px;
-  margin-bottom: 29px;
+  margin-top: 27px;
+  margin-bottom: 27px;
 }
 
 .form__inputs {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 7px;
 }
 
-.form__input {
+.form__item {
   position: relative;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.form__item--contact {
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .form__radio {
@@ -66,7 +71,7 @@
   font-size: 16px;
   text-transform: uppercase;
   align-self: center;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .form__label--check,
@@ -75,7 +80,7 @@
   position: relative;
   cursor: pointer;
   user-select: none;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .form__radio:checked + .form__label--radio::before,
@@ -122,46 +127,59 @@
   transform: scale(0);
 }
 
-.form__field {
+.form__input {
   width: auto;
   box-sizing: border-box;
   font-family: @font-oswald;
   font-size: 16px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   border: 1px solid @grizzly;
   text-transform: uppercase;
   flex-grow: 1;
 }
 
-.form__field:hover {
+.form__contacts {
+  margin-bottom: 4px;
+}
+
+.form__item--contact:last-child {
+  margin-bottom: 0;
+}
+
+.form__item:hover {
   border-color: #cdcdcd;
 }
 
-.form__field:hover + .form__phone path,
-.form__field:hover + .form__mail path {
+.form__item:hover + .form__phone path,
+.form__item:hover + .form__mail path {
   fill: @leaf;
 }
 
-.form__field--error:hover {
+.form__input--error:hover {
   border-color: #ff8282;
 }
 
-.form__field--error + .form__phone path,
-.form__field--error + .form__mail path {
+.form__input--error + .form__phone path,
+.form__input--error + .form__mail path {
   fill: #ff8282;
 }
 
-.form__field:focus {
+.form__item:focus {
   border-width: 2px;
   border-color: #444444;
   outline: none;
 }
 
-.form__field--error {
+.form__input--error {
   border-width: 2px;
   border-color: #ff8282;
+}
+
+.form__heading--contact {
+  margin-top: 28px;
+  margin-bottom: 34px;
 }
 
 .form__phone,
@@ -172,13 +190,13 @@
 }
 
 .form__mail {
-  top: 8px;
-  left: 254px;
+  top: 16px;
+  left: 246px;
 }
 
 .form__phone {
-  top: 5px;
-  left: 254px;
+  top: 13px;
+  left: 246px;
 }
 
 .form__phone path,
@@ -187,8 +205,10 @@
 }
 
 .form__note {
+  font-family: "Arial", sans-serif;
   margin: 0;
   text-align: center;
+  letter-spacing: -1px;
 }
 
 .form__container {
@@ -226,6 +246,14 @@
   left: 143px;
 }
 
+.form__heading--comment {
+  margin-bottom: 35px;
+}
+
+.form__heading--extra {
+  margin-bottom: 41px;
+}
+
 .form__heading--extra::after {
   left: 162px;
 }
@@ -233,18 +261,20 @@
 .form__textarea {
   box-sizing: border-box;
   border: 1px solid @gray;
-  padding-top: 10px;
+  padding-top: 13px;
   padding-left: 15px;
   padding-right: 10px;
+  padding-bottom: 45px;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: #444444;
   resize: none;
+  margin-bottom: 4px;
 }
 
 .form__extras {
-  margin-bottom: 42px;
+  margin-bottom: 17px;
 }
 
 .form__label--check {
@@ -298,11 +328,11 @@
 .form__submit {
   display: flex;
   flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 .form__button {
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -335,9 +365,7 @@
     right: 665px;
   }
 
-  .form__heading--contact {
-    margin-bottom: 70px;
-  }
+c
 
   .form__heading--comment {
     margin-bottom: 75px;
@@ -370,12 +398,12 @@
     margin-bottom: 40px;
   }
 
-  .form__input {
+  .form__item {
     font-size: 20px;
     margin-bottom: 20px;
   }
 
-  .form__field {
+  .form__item {
     font-size: 20px;
     padding-left: 20px;
     padding-top: 17px;
@@ -552,7 +580,7 @@
     margin-bottom: 0;
   }
 
-  .form__input:last-child {
+  .form__item:last-child {
     margin-bottom: 0;
   }
 
@@ -563,8 +591,12 @@
     align-items: flex-start;
   }
 
-  .form__input--contact {
+  .form__item--contact {
     width: 570px;
+  }
+
+  .form__item--contact:last-child {
+    margin-bottom: 0;
   }
 
   .form__extras {
