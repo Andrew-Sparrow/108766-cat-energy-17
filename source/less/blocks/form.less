@@ -362,6 +362,7 @@
 @media (min-width: @tablet-width) {
   .form__title {
     font-size: 60px;
+    margin-bottom: 49px;
   }
 
   .form__container {
@@ -409,23 +410,37 @@
     width: 325px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 69px;
+    margin-bottom: 62px;
   }
 
   .form__label {
     font-size: 20px;
   }
 
+  .form__item--person:nth-child(2) .form__label {
+    margin-right: 21px;
+  }
+
   .form__inputs {
     margin-bottom: 40px;
   }
 
+  .form__input {
+    font-size: 20px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
+
+  .form__input--name {
+    padding-left: 20px;
+  }
+
   .form__item {
     font-size: 20px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-left: 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 15px;
     color: #444444;
   }
 
@@ -441,12 +456,17 @@
 
   .form__radiobuttons {
     width: 100%;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 94px;
+    padding-top: 48px;
+    padding-bottom: 3px;
+    padding-left: 87px;
     margin-top: 0;
     margin-left: 0;
+    margin-bottom: 52px;
     border: 1px solid @gray;
+  }
+
+  .form__label--radio {
+    margin-bottom: 30px;
   }
 
   .form__radio:checked + .form__label--radio::before,
