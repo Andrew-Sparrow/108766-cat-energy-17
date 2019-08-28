@@ -1,8 +1,10 @@
 .work {
+  width: @phone-width;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 46px;
 }
 
 .work__list {
@@ -15,73 +17,206 @@
 
 .work__item {
   position: relative;
-  width: 192px;
+  width: 201px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 86px;
-  margin-bottom: 20px;
+  margin-left: 80px;
+  margin-bottom: 25px;
+}
+
+.work__item:nth-child(2) .work__paragraph {
+  width: 201px;
+}
+
+.work__item:last-child {
+  margin-bottom: 0;
 }
 
 .work__item::before {
   position: absolute;
   content: "";
-  width: 50px;
-  height: 50px;
-  top: 2px;
-  left: -83px;
+  width: 60px;
+  height: 60px;
+  top: -4px;
+  left: -80px;
   background-color: @leaf;
 }
 
+.work__item::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 1px;
+  left: -74px;
+}
+
+.work__item:nth-child(1)::after {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.work__item:nth-child(2)::after {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+
+.work__item:nth-child(3)::after {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.work__item:nth-child(4)::after {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
 .work__title {
-  margin-bottom: 20px;
+  margin-top: 7px;
+  margin-bottom: 41px;
+}
+
+.work__paragraph {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .work {
+    width: @tablet-width;
     flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .work__list {
+    width: 100%;
+    margin-bottom: -22px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .work__item::before {
     width: 80px;
     height: 80px;
-    top: -106px;
+    top: -113px;
     left: 0;
   }
 
   .work__item {
-    width: 230px;
+    width: 321px;
     font-size: 16px;
     line-height: 24px;
+    margin-top: 108px;
     margin-left: 0;
-    margin-top: 117px;
-    margin-right: 80px;
+    margin-right: 0;
+    margin-bottom: 137px;
+  }
 
-    &:nth-child(even) {
-      margin-left: auto;
-    }
+  .work__item:nth-child(odd) {
+    width: 386px;
+  }
+
+  .work__item:last-child {
+    margin-bottom: 130px;
+  }
+
+  .work__paragraph {
+    position: relative;
+    margin: 0;
+  }
+
+  .work__paragraph::after {
+    display: block;
+    position: absolute;
+    font-family: @font-oswald;
+    font-size: 281px;
+    color: @graylight;
+    top: -27px;
+    z-index: -10;
+  }
+
+  .work__item:nth-child(1) .work__paragraph::after {
+    content: "1";
+    left: 117px;
+  }
+
+  .work__item:nth-child(2) .work__paragraph::after {
+    content: "2";
+    left: 109px;
+  }
+
+  .work__item:nth-child(3) .work__paragraph::after {
+    content: "3";
+    left: 114px;
+  }
+
+  .work__item:nth-child(4) .work__paragraph::after {
+    content: "4";
+    left: 111px;
+  }
+
+  .work__item:nth-child(1) .work__paragraph {
+    width: 210px;
+  }
+
+  .work__item:nth-child(2) .work__paragraph {
+    width: 225px;
+  }
+
+  .work__item:nth-child(3) .work__paragraph {
+    width: 225px;
+  }
+
+  .work__item:last-child .work__paragraph {
+    width: 246px;
+  }
+
+  .work__best {
+    display: block;
+    width: 139px;
+  }
+
+  .work__item::after {
+    top: -98px;
+    left: 16px;
   }
 
   .work__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-top: 0;
+    margin-bottom: 76px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .work__list {
-    margin-left: -80px;
-    justify-content: space-between;
-    padding-bottom: 90px;
+  .work {
+    width: @desktop-width;
   }
 
-  .work__item:nth-child(2n) {
-    margin-left: 80px;
+  .work__title {
+    margin-bottom: 184px;
+  }
+
+  .work__list {
+    width: 1300px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: -49px;
+    margin-left: -80px;
   }
 
   .work__item {
+    width: 245px;
+    margin-top: 0;
+    margin-bottom: 170px;
     margin-left: 80px;
-    margin-right: 0;
+  }
+
+  .work__item:last-child {
+    margin-bottom: 80px;
+  }
+
+  .work__item:nth-child(odd) {
+    width: 245px;
   }
 }

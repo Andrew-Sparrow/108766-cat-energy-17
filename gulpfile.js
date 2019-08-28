@@ -30,7 +30,11 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch(["source/less/*.less",
+    "source/less/blocks/*.less",
+    "source/less/libs/*.less"
+  ],
+  gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 

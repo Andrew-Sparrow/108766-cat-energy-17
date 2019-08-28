@@ -1,5 +1,4 @@
 .collaborate__box {
-  width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: @white;
@@ -7,16 +6,36 @@
 
 .collaborate__container {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 22px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 24px;
   justify-content: space-between;
 }
 
 .collaborate__advert {
+  width: 140px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -1px;
   margin: 0;
-  width: 123px;
+  margin-top: -3px;
+}
+
+.collaborate__invite {
+  width: 98px;
+  display: block;
+}
+
+.collaborate__dealer {
+  display: block;
+  width: 138px;
+}
+
+.collaborate--background {
+  background-color: @graylight;
 }
 
 .collaborate__address {
@@ -24,22 +43,75 @@
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
+  font-style: normal;
+}
+
+.collaborate__advert,
+.collaborate__address {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .collaborate__map {
   width: 100%;
   border: none;
-  background-color: @leaf;
-  min-height: 350px;
+  background-color: #fdf7ef;
+  min-height: 360px;
   margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .collaborate__box {
-    width: @tablet-width;
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .collaborate--main {
+    background-color: @white;
+  }
+
+  .collaborate--background {
+    background-color: @graylight;
+  }
+
+  .collaborate__container {
+    padding-top: 62px;
+    padding-bottom: 56px;
+    padding-left: 31px;
+    padding-right: 110px;
+  }
+
+  .collaborate__advert {
+    width: 179px;
+    font-size: 30px;
+    margin-top: 1px;
+    line-height: 24px;
+    letter-spacing: -1px;
+  }
+
+  .collaborate__invite {
+    width: 150px;
+  }
+
+  .collaborate__dealer {
+    width: 182px;
+  }
+
+  .collaborate__address {
+    width: 161px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .collaborate__street {
+    display: block;
+    margin-bottom: 23px;
+  }
+
+  .collaborate__map {
+    min-height: 397px;
   }
 }
 
@@ -63,10 +135,34 @@
     top: 100px;
     left: 40px;
     background-color: @white;
+    padding-left: 76px;
+    padding-right: 85px;
+    padding-top: 56px;
+    padding-bottom: 59px;
   }
 
   .collaborate__advert {
+    width: 167px;
+    font-size: 28px;
+    font-weight: 100;
     line-height: 25px;
+    margin-top: -8px;
+    letter-spacing: -1px;
+  }
+
+  .collaborate__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .collaborate__street {
+    display: inherit;
+  }
+
+  .collaborate__city {
+    margin-bottom: 9px;
   }
 
   .collaborate__position {
@@ -74,6 +170,6 @@
   }
 
   .collaborate__map {
-    min-height: 410px;
+    min-height: 399px;
   }
 }

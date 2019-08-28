@@ -1,28 +1,31 @@
 .order-else {
-  display: none;
   margin: 0;
+  position: relative;
+  width: 280px;
+  box-sizing: border-box;
+  justify-content: center;
+  background: @leaf;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  font-family: "Arial", sans-serif;
+  color: @white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 186px;
+  padding-bottom: 42px;
+  padding-left: 56px;
+  padding-right: 62px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
-@media (min-width: @desktop-width) {
-  .order-else {
-    display: flex;
-    position: relative;
-    width: 245px;
-    box-sizing: border-box;
-    justify-content: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    background: @leaf;
-    background-image: url("../img/gift-photo-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    padding-top: 190px;
-    font-family: "Arial", sans-serif;
-    color: @white;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-  }
+.order-else__all {
+  display: block;
+  width: 104px;
+  margin: 0 auto;
 }
 
 .order-else::after {
@@ -30,9 +33,64 @@
   width: 56px;
   height: 61px;
   content: "";
-  background-color: @leaf;
   background-image: url("../img/icon-gift.svg");
   top: 65px;
-  left: 96px;
+  left: 113px;
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .order-else {
+    width: 100%;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    padding-top: 72px;
+    padding-bottom: 67px;
+    padding-left: 424px;
+    padding-right: 103px;
+    margin-top: 68px;
+    margin-bottom: 77px;
+    text-align: left;
+  }
+
+  .order-else::after {
+    left: 90px;
+  }
+
+  .order-else__all {
+    margin: 0;
+  }
+
+  .order-else__text {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-else {
+    width: 245px;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    background: @leaf;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    padding-top: 190px;
+    font-family: "Arial", sans-serif;
+    color: @white;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    align-self: flex-start;
+  }
+
+  .order-else::after {
+    top: 65px;
+    left: 96px;
+  }
+
+  .order-else__text {
+    text-align: center;
+  }
 }

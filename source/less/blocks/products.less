@@ -1,24 +1,27 @@
 .products {
+  width: auto;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 @media (min-width: @tablet-width) {
   .products {
+    width: 712px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -50px;
-  }
-
-  .products li:nth-child(2n) {
-    margin-left: 60px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: @desktop-width) {
   .products {
+    width: 1300px;
     margin-left: -80px;
+    margin-bottom: -178px;
+    justify-content: flex-start;
   }
 }

@@ -5,14 +5,26 @@
   justify-content: space-between;
 }
 
+.copyright__logo {
+  display: block;
+}
+
 .copyright__name {
+  font-family: "Arial", sans-serif;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 16px;
 }
 
 @media (min-width: @tablet-width) {
+  .copyright {
+    justify-content: space-between;
+  }
+
   .copyright__name {
     font-size: 16px;
     line-height: 16px;
+    margin-top: 10px;
+    margin-left: -1px;
   }
 }

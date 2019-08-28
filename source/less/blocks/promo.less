@@ -1,40 +1,49 @@
 .promo {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  //outline: 1px solid @black;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  align-items: center;
-  outline: 1px solid @black;
+  margin-top: -305px;
+}
+
+.promo__full {
+  background-color: @leaf;
 }
 
 .promo__title {
   margin: 0;
   width: 270px;
   line-height: 36px;
-  padding-top: 29px;
-  margin-bottom: 20px;
+  padding-top: 27px;
   text-align: center;
   color: @white;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .promo__motto {
   width: 210px;
   font-size: 14px;
   font-weight: 400;
-  margin-top: 29px;
+  margin-top: 25px;
   margin-bottom: 197px;
   text-align: center;
   text-transform: uppercase;
   color: @white;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .promo__button {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .promo__img {
-  margin-top: -170px;
+  margin-top: -169px;
+  margin-bottom: 1px;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,41 +52,52 @@
     background-image: none;
     color: @black;
     align-items: flex-start;
-    padding-left: 120px;
+    margin-top: 0;
+  }
+
+  .promo__full {
+    background-color: @white;
   }
 
   .promo__title,
   .promo__motto {
     color: @black;
     text-align: left;
+    padding-left: 117px;
   }
 
   .promo__title {
-    width: 412px;
+    width: 414px;
     font-size: 60px;
     line-height: 60px;
+    padding-top: 26px;
   }
 
   .promo__motto {
     width: 295px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 48px;
+    margin-top: 42px;
+    margin-bottom: 47px;
   }
 
   .promo__img {
-    width: 709px;
+    width: 629px;
     height: 609px;
     order: 2;
     z-index: -1;
-    padding-top: 73px;
-    margin-left: -23px;
+    padding-top: 68px;
+    margin-left: 108px;
   }
 
   .promo__button {
     width: 245px;
     font-size: 20px;
     line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 13px;
+    margin-left: 117px;
   }
 }
 
@@ -86,22 +106,40 @@
     width: @desktop-width;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-size: 720px 696px;
-    background-position: 581px;
+    background-position: 652px;
     background-repeat: no-repeat;
     margin-bottom: 80px;
   }
 
   .promo__title {
-    margin-top: 167px;
+    margin-top: 200px;
+    padding-left: 120px;
+  }
+
+  .promo__picture {
+    order: 4;
   }
 
   .promo__img {
     width: 552px;
     height: 499px;
+    top: -50px;
+    left: -50px;
     order: 2;
     z-index: 0;
     padding-top: 0;
-    margin-left: 331px;
-    margin-top: -365px;
+    margin-left: 489px;
+    margin-top: -415px;
+    margin-bottom: 53px;
+  }
+
+  .promo__motto {
+    padding-left: 120px;
+    margin-bottom: 52px;
+  }
+
+  .promo__button {
+    margin-left: 121px;
+    margin-bottom: 50px;
   }
 }

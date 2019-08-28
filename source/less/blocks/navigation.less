@@ -1,10 +1,29 @@
+.navigation {
+  display: none;
+  width: 100%;
+  padding: 0;
+}
+
 .navigation__toggle {
   padding: 0;
   background-color: white;
   border: none;
+  margin-bottom: -1px;
 }
 
 @media (min-width: @tablet-width) {
+  .navigation {
+    display: block;
+    width: 500px;
+  }
+
+  .navigation__wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .navigation__toggle {
     display: none;
   }
