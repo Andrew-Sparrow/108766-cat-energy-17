@@ -603,6 +603,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form__title {
+    margin-top: 36px;
+    margin-bottom: 52px;
+  }
+
   .form__selection {
     width: @desktop-width;
     box-sizing: border-box;
@@ -611,6 +616,7 @@
     padding: 0 40px;
     margin: 0 auto;
     align-items: flex-end;
+    margin-bottom: 50px;
   }
 
   .full__form--part {
@@ -637,10 +643,30 @@
   }
 
   .form__plea {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
+  }
+
+  .form__inputs {
+    margin-bottom: 0;
+  }
+
+  .form__item {
+    margin-bottom: 19px;
+  }
+
+  .form__input {
+    padding-top: 17px;
+    padding-bottom: 12px;
+    line-height: 21px;
+  }
+
+  .form__label {
+    margin-right: 16px;
   }
 
   .form__radiobuttons {
+    padding-top: 32px;
+    padding-bottom: 29px;
     margin-bottom: 0;
   }
 
@@ -649,25 +675,29 @@
   }
 
   .form__phone {
-    top: 28px;
-    left: 524px;
+    top: 17px;
+    left: 532px;
+  }
+
+  .form__item--contact:nth-child(1) .form__label {
+    margin-right: 21px;
+  }
+
+  .form__item--contact:nth-child(1) .form__input--contact {
+    padding-left: 18px;
   }
 
   .form__mail {
-    top: 23px;
-    left: 524px;
+    top: 19px;
+    left: 533px;
   }
 
   .form__label--radio {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 
   .form__radiobutton:last-child,
   .form__radiobutton:last-child .form__label {
-    margin-bottom: 0;
-  }
-
-  .form__inputs {
     margin-bottom: 0;
   }
 
@@ -680,6 +710,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: 19px;
   }
 
   .form__item--contact {
@@ -690,9 +721,14 @@
     margin-bottom: 0;
   }
 
+  .form__textarea {
+    padding-top: 13px;
+    padding-bottom: 37px;
+  }
+
   .form__extras {
-    width: 1300px;
-    margin-bottom: 74px;
+    width: 1380px;
+    margin-bottom: 50px;
     margin-left: -80px;
     display: flex;
     flex-direction: row;
@@ -710,13 +746,39 @@
     margin-bottom: 0;
   }
 
+  .form__heading--comment {
+    margin-bottom: 80px;
+  }
+
   .form__checkbox {
     width: 245px;
     margin-bottom: 20px;
+    margin-left: 88px;
+  }
+
+  .form__checkbox:nth-child(2) {
+    margin-left: 80px;
+  }
+
+  .form__checkbox:nth-child(3) {
+    margin-left: 80px;
+  }
+
+  .form__checkbox:last-child {
     margin-left: 80px;
   }
 
   .form__button {
     width: 568px;
+    padding-top: 19px;
+  }
+
+  .form__note {
+    letter-spacing: 0;
+    margin-left: 84px;
+  }
+
+  .form__submit {
+    margin-bottom: 82px;
   }
 }
