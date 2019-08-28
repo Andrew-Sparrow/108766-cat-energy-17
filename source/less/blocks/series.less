@@ -216,7 +216,7 @@
 
 @media (min-width: @desktop-width) {
   .series {
-    margin-bottom: 79px;
+    margin-bottom: 71px;
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
@@ -228,9 +228,10 @@
   }
 
   .series__title {
-    padding-left: 214px;
-    padding-top: 82px;
+    padding-left: 162px;
+    padding-top: 77px;
     padding-bottom: 74px;
+    letter-spacing: 0.8px;
   }
 
   .series__title::before {
@@ -243,7 +244,7 @@
   }
 
   .series__item:nth-child(2) .series__title {
-    padding-top: 82px;
+    padding-top: 77px;
   }
 
   .series__item:nth-child(2) .series__title::before {
@@ -252,19 +253,30 @@
   }
 
   .series__item:nth-child(1) .series__title::after {
-    top: 46px;
-    left: 73px;
+    top: 41px;
+    left: 66px;
     width: 70px;
     height: 97px;
   }
 
   .series__item:nth-child(2) .series__title::after {
-    top: 70px;
-    left: 30px;
+    top: 69px;
+    left: 35px;
     width: 134px;
     height: 56px;
   }
 
+  .series__item:first-child .series__paragraph {
+    width: 470px;
+    margin-bottom: 31px;
+    padding-bottom: 0;
+  }
+
+  .series__item:nth-child(2) .series__paragraph {
+    width: 470px;
+    margin-bottom: 31px;
+    padding-bottom: 0;
+  }
 
   .series__link {
     font-size: 20px;
@@ -278,6 +290,7 @@
   .series__paragraph {
     width: 428px;
     margin-bottom: 32px;
+    padding-bottom: 0;
   }
 
   .series__paragraph--last {
