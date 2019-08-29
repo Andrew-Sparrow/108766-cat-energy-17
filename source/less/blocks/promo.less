@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   background-position: center top;
   margin-top: -305px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px;
+  }
 }
 
 .promo__full {
@@ -55,6 +60,10 @@
     margin-top: 0;
   }
 
+  .promo__picture {
+    order: 4;
+  }
+
   .promo__full {
     background-color: @white;
   }
@@ -82,12 +91,11 @@
   }
 
   .promo__img {
-    width: 629px;
+    width: 709px;
     height: 609px;
-    order: 2;
-    z-index: -1;
+    z-index: 0;
     padding-top: 68px;
-    margin-left: 108px;
+    margin-left: 29px;
   }
 
   .promo__button {
@@ -98,6 +106,7 @@
     padding-bottom: 16px;
     padding-left: 13px;
     margin-left: 117px;
+    z-index: 100;
   }
 }
 
@@ -109,6 +118,11 @@
     background-position: 652px;
     background-repeat: no-repeat;
     margin-bottom: 80px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px;
+    }
   }
 
   .promo__title {
