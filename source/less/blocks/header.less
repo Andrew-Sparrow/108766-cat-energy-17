@@ -23,6 +23,11 @@
   margin-bottom: 14px;
 }
 
+.header__img--desktop,
+.header__img--tablet {
+  display: none;
+}
+
 .header__link {
   font-family: @font-oswald;
   font-size: 16px;
@@ -47,6 +52,14 @@
     padding-right: 0;
   }
 
+  .header__img--mobile {
+    display: none;
+  }
+
+  .header__img--tablet {
+    display: block;
+  }
+
   .header__img {
     width: 173px;
   }
@@ -63,6 +76,7 @@
 
   .header__img {
     width: 202px;
+    display: block;
   }
 
   .header__link--hover:hover {
