@@ -21,6 +21,9 @@
   <symbol id="social-fb" viewBox="35 0 13 18">
     <path d="M44.32 23.041h-6.816V10.137h-2.715V3.763h2.629c-.202-2.887.298-5 1.519-6.444 1.039-1.229 2.583-1.911 4.588-2.026l4.782-.001v6.15h-3.755c-.166.315-.251 1.093-.252 2.321h3.978v6.375H44.32v12.903zm-5.316-1.5h3.816V8.637h3.957V5.263h-3.953l-.016-.734c-.044-2.04.002-3.784 1.007-4.46l.19-.127h2.801v-3.15h-3.239c-1.557.091-2.711.581-3.485 1.496-1.041 1.231-1.41 3.298-1.099 6.144l.092.832h-2.786v3.375h2.715v12.902z"></path>
   </symbol>
+  <symbol id="htmlacademy-logo" viewBox="0 0 27 34">
+    <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"></path>
+  </symbol>
 </svg>
 <header class="header">
   <div class="header__wrapper">
@@ -99,7 +102,7 @@
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
-              
+
                 <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
                 <img class="product__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 1000 г">
@@ -414,9 +417,11 @@
         </ul>
       </div>
       <a class="copyright footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="курс адаптивной верстки HTMLAcademy">
+         aria-label="курс адаптивной верстки HTMLAcademy">
         <span class="copyright__name">HTML Academy</span>
-        <img class="copyright__logo" src="img/htmlacademy-svg.svg" width="27" height="34" alt="логотип htmlacademy">
+        <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34">
+          <use xlink:href="#htmlacademy-logo"></use>
+        </svg>
       </a>
     </div>
   </footer>

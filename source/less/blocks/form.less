@@ -176,17 +176,17 @@
   border-color: #cdcdcd;
 }
 
-.form__item:hover + .form__phone path,
-.form__item:hover + .form__mail path {
+.form__input:focus + .form__phone,
+.form__input:focus + .form__mail {
   fill: @leaf;
 }
 
-.form__input--error:hover {
+.form__input--error:focus {
   border-color: #ff8282;
 }
 
-.form__input--error + .form__phone path,
-.form__input--error + .form__mail path {
+.form__input--error + .form__phone,
+.form__input--error + .form__mail {
   fill: #ff8282;
 }
 
