@@ -53,18 +53,18 @@ gulp.task("css", function () {
 
 gulp.task ("sprite", function () {
   return gulp.src([
-   "source/img/icon-insta.svg",
-   "source/img/icon-vk.svg",
-   "source/img/icon-fb.svg",
-   "source/img/htmlacademy-svg.svg",
-   "source/img/icon-phone.svg",
-   "source/img/icon-mail.svg",
-    ])
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"))
+    "source/img/icon-insta.svg",
+    "source/img/icon-vk.svg",
+    "source/img/icon-fb.svg",
+    "source/img/htmlacademy-svg.svg",
+    "source/img/icon-phone.svg",
+    "source/img/icon-mail.svg",
+  ])
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"))
 });
 
 /*adds sprite to html*/
