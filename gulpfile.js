@@ -10,8 +10,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var imagemin =require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
 var webp =require("gulp-webp");
-var svgdtore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var del = require("del");
 var include = require("posthtml-include");
@@ -45,6 +45,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -92,7 +93,7 @@ gulp.task("server", function () {
   ], gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html","refresh"));
 // watches if new images were added or deleted from source/img
-  gulp.watch("source/img/**",gulp.series("build"))
+ // gulp.watch("source/img/**",gulp.series("build"))
 });
 
 gulp.task("refresh", function (done) {
