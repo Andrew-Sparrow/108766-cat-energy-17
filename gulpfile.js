@@ -54,8 +54,8 @@ gulp.task("css", function () {
 
 gulp.task ("sprite", function () {
   return gulp.src([
-    "source/img/icon-insta.svg",
     "source/img/icon-vk.svg",
+    "source/img/icon-insta.svg",
     "source/img/icon-fb.svg",
     "source/img/htmlacademy-svg.svg",
     "source/img/icon-phone.svg",
