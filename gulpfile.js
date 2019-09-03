@@ -53,14 +53,7 @@ gulp.task("css", function () {
 });
 
 gulp.task ("sprite", function () {
-  return gulp.src([
-    "source/img/icon-vk.svg",
-    "source/img/icon-insta.svg",
-    "source/img/icon-fb.svg",
-    "source/img/htmlacademy-svg.svg",
-    "source/img/icon-phone.svg",
-    "source/img/icon-mail.svg",
-  ])
+  return gulp.src("source/img/sprite/**")
   .pipe(svgstore({
     inlineSvg: true
   }))
@@ -83,14 +76,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less",gulp.series("css"));
-  gulp.watch([
-    "source/img/icon-insta.svg",
-    "source/img/icon-vk.svg",
-    "source/img/icon-fb.svg",
-    "source/img/htmlacademy-svg.svg",
-    "source/img/icon-phone.svg",
-    "source/img/icon-mail.svg",
-  ], gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/img/sprite/**", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html","refresh"));
 // watches if new images were added or deleted from source/img
  // gulp.watch("source/img/**",gulp.series("build"))
