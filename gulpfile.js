@@ -22,13 +22,13 @@ gulp.task("clean", function () {
 });
 
 gulp.task("webp", function (){
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{png, jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"))
 });
 
 gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png, jpg, svg}")
+  return gulp.src("source/img/**/*.{png, jpeg, svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
@@ -53,7 +53,7 @@ gulp.task("css", function () {
 });
 
 gulp.task ("sprite", function () {
-  return gulp.src("source/img/sprite/**")
+  return gulp.src("source/img/sprite/*.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))
@@ -76,10 +76,10 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less",gulp.series("css"));
-  gulp.watch("source/img/sprite/**", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/img/sprite/*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html","refresh"));
 // watches if new images were added or deleted from source/img
- // gulp.watch("source/img/**",gulp.series("build"))
+  gulp.watch("source/img/**/*.{png, jpg, svg, webp}",gulp.series("build"))
 });
 
 gulp.task("refresh", function (done) {
@@ -90,8 +90,8 @@ gulp.task("refresh", function (done) {
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff, woff2}",
-    "source/img/**",
-    "source/js/**",
+    "source/img/",
+    "source/js/**/*.js",
     "source/*.ico"
   ],{
     base: "source"
