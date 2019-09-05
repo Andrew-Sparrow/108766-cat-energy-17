@@ -75,11 +75,11 @@ gulp.task("server", function () {
     server: "build/"
   });
 
-  gulp.watch("source/less/**/*.less",gulp.series("css"));
-  gulp.watch("source/img/sprite/*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/less/**/*.less",gulp.series("css","refresh"));
+  gulp.watch("source/img/sprite/*.svg", gulp.series("sprite","html","refresh"));
   gulp.watch("source/*.html", gulp.series("html","refresh"));
 // watches if new images were added from source/img
-  gulp.watch("source/img/**/*.{png,jpg,svg,webp}",gulp.series("copy", "refresh"))
+  gulp.watch("source/img/**/*.{png,jpg,svg,webp}",gulp.series("copy","refresh"))
 });
 
 gulp.task("refresh", function (done) {

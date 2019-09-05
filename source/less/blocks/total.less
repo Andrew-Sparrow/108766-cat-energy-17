@@ -20,5 +20,27 @@
 @media (min-width: @desktop-width) {
   .total {
     background: linear-gradient(to left, @darkleaf 50%, transparent 50%);
+    background-position: 50%, center;
+    margin-bottom: 80px;
+    z-index: 0;
+  }
+
+  .total::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 720px;
+    height: 696px;
+    top: 4px;
+    left: 50%;
+    background: url("../img/index-background-desktop@1x.jpg");
+    background-size: 720px 696px;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-desktop@2x.jpg");
+    background-size: 720px;
   }
 }
