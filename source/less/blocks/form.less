@@ -172,10 +172,6 @@
   margin-bottom: 0;
 }
 
-.form__item:hover {
-  border-color: #cdcdcd;
-}
-
 .form__input:focus + .form__phone,
 .form__input:focus + .form__mail {
   fill: @leaf;
@@ -190,7 +186,8 @@
   fill: #ff8282;
 }
 
-.form__item:focus {
+.form__textarea:focus,
+.form__input:focus {
   border-width: 2px;
   border-color: #444444;
   outline: none;
