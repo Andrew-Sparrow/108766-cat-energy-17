@@ -3,16 +3,16 @@
 }
 
 .example__box {
-  width: @phone-width;
+  width: @phone-container;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0;
   margin: 0 auto;
   margin-bottom: 38px;
 }
 
 .example__heading {
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0;
   padding-top: 27px;
   padding-bottom: 33px;
 }
@@ -23,6 +23,7 @@
 }
 
 .example__img {
+  width: 311px;
   height: 236px;
   margin-bottom: 32px;
 }
@@ -78,7 +79,6 @@
 }
 
 .example__before-after {
-  width: @phone-width;
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
@@ -109,19 +109,19 @@
   }
 
   .example__heading {
-    width: @tablet-width;
+    width: @table-container;
     font-size: 60px;
     padding-top: 25px;
     padding-bottom: 62px;
-    padding-left: 30px;
-    padding-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0 auto;
   }
 
   .example__box {
-    width: @tablet-width;
+    width: @table-container;
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0;
     margin: 0 auto;
   }
 
@@ -191,8 +191,8 @@
   }
 
   .example__before-after {
-    width: @tablet-width;
-    padding: 0 30px;
+    width: @table-container;
+    padding: 0;
     box-sizing: border-box;
     margin: 0 auto;
     min-height: 462px;
