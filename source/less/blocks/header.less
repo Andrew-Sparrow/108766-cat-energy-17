@@ -38,6 +38,13 @@
   color: @black;
 }
 
+.header__toggle {
+  padding: 0;
+  background-color: white;
+  border: none;
+  margin-bottom: 0;
+}
+
 @media (min-width: @tablet-width) {
   .header {
     width: @table-container;
@@ -78,17 +85,19 @@
     box-sizing: border-box;
     min-height: 142px;
     margin: 0 auto;
+    margin-top: 47px;
     padding: 0;
   }
 
   .header__img {
     width: 202px;
+    height: 59px;
     display: block;
   }
 
   .header__picture {
-    margin-top: -87px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .header__link--hover:hover {
@@ -101,6 +110,6 @@
   }
 
   .header--margin {
-    margin-bottom: -150px;
+    margin-bottom: -190px;
   }
 }

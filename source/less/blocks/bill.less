@@ -119,19 +119,31 @@
 
 @media (min-width: @desktop-width) {
   .bill {
+    width: 482px;
     position: relative;
     z-index: 100;
     justify-content: flex-end;
-    margin-top: 20px;
+    margin-top: 0;
+    padding: 0;
+    padding-left: 2px;
+  }
+
+  .bill__item {
+    margin-left: 29px;
   }
 
   .bill__item:first-child {
-    margin-right: 29px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .bill__item:nth-child(2) {
     width: 180px;
-    margin-right: 29px;
+    margin-right: 0;
+  }
+
+  .bill__item:nth-last-child(1) {
+    padding-right: 0;
   }
 
   .bill__link {
