@@ -384,7 +384,7 @@ img {
     border-bottom: none;
   }
 }
-.full__work {
+.work {
   border-bottom: 1px solid #cfcfcf;
 }
 .form__full {
@@ -396,7 +396,7 @@ img {
   }
 }
 @media (min-width: 1300px) {
-  .full__work {
+  .work {
     border-bottom: none;
   }
 }
@@ -1346,7 +1346,7 @@ img {
   -webkit-transform: scale(0);
           transform: scale(0);
 }
-.form--last {
+.form__label--last {
   margin-bottom: 0;
 }
 .form__submit {
@@ -1597,7 +1597,7 @@ img {
             align-items: flex-end;
     margin-bottom: 50px;
   }
-  .full__form--part {
+  .form__full--part {
     width: 570px;
   }
   .form__container {
@@ -2020,7 +2020,7 @@ img {
     width: 444px;
   }
 }
-.work {
+.work__box {
   width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2122,7 +2122,7 @@ img {
   margin: 0;
 }
 @media (min-width: 768px) {
-  .work {
+  .work__box {
     width: 768px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2216,7 +2216,7 @@ img {
   }
 }
 @media (min-width: 1300px) {
-  .work {
+  .work__box {
     width: 1300px;
   }
   .work__title {
@@ -2578,7 +2578,7 @@ img {
   display: block;
   width: 138px;
 }
-.collaborate--background {
+.collaborate__box--background {
   background-color: #f2f2f2;
 }
 .collaborate__address {
@@ -2609,7 +2609,7 @@ img {
   .collaborate--main {
     background-color: #ffffff;
   }
-  .collaborate--background {
+  .collaborate__box--background {
     background-color: #f2f2f2;
   }
   .collaborate__container {

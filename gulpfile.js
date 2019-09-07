@@ -15,7 +15,7 @@ var webp =require("gulp-webp");
 var posthtml = require("gulp-posthtml");
 var del = require("del");
 var include = require("posthtml-include");
-
+var bem_validate = require("bem-validate");
 
 gulp.task("clean", function () {
   return del("build");
