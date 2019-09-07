@@ -376,11 +376,11 @@ img {
     background: linear-gradient(to left, #63a73a 50%, transparent 50%);
   }
 }
-.border__bottom {
+.catalog__border {
   border-bottom: 1px solid #cdcdcd;
 }
 @media (min-width: 768px) {
-  .border__bottom {
+  .catalog__border {
     border-bottom: none;
   }
 }
