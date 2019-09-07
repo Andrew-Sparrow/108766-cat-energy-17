@@ -22,11 +22,15 @@
         <img class="header__img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
       </picture>
     </a>
-    <button class="header__toggle" type="button" aria-label="меню">
+    <!--спрятать кнопку для меню с JavaScript - класс "header__toggle--hide"-->
+    <button class="header__toggle header__toggle--hide" type="button" aria-label="меню">
+      <!--спрятать кнопку для меню - класс "header__icon--hide"-->
       <img class="header__icon" src="img/icon-mobile-menu.svg" width="25" height="19" alt="меню">
+      <img class="header__icon header__icon--close header__icon--hide" src="img/icon-close.svg" width="25" height="25" alt="кнопка закрыть меню">
     </button>
   </div>
-  <nav class="navigation">
+  <!--Показать меню навигации - "navigation--show"-->
+  <nav class="navigation navigation--show">
     <div class="navigation__wrapper">
       <ul class="bill">
         <li class="bill__item">
