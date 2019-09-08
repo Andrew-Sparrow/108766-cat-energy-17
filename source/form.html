@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Форма:Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -62,8 +63,8 @@
                 <label class="form__label" for="name">
                   Имя:*
                 </label>
-                <!--  error- "form__field--error"-->
-                <input class="form__input form__input--name" id="name" type="text" name="name" placeholder="Барсик">
+                <!--  error- "form__input--error"-->
+                <input class="form__input form__input--name" id="name" type="text" name="name" placeholder="Барсик" required>
               </li>
               <li class="form__item form__item--person">
                 <label class="form__label form__label--weight" for="weight">
