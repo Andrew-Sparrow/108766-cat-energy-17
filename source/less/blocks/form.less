@@ -172,11 +172,6 @@
   outline: 1px solid #cdcdcd;
 }
 
-.form__input:invalid:hover,
-.form__input:invalid {
-  outline: 2px solid #ff8282;
-}
-
 .form__contacts {
   margin-bottom: 4px;
 }
@@ -190,24 +185,10 @@
   fill: @leaf;
 }
 
-.form__input--error:focus {
-  outline-color: #ff8282;
-}
-
-.form__input--error + .form__phone,
-.form__input--error + .form__mail {
-  fill: #ff8282;
-}
-
 .form__textarea:focus,
 .form__input:focus {
   outline-width: 2px;
   outline-color: #444444;
-}
-
-.form__input--error {
-  border-width: 2px;
-  outline-color: #ff8282;
 }
 
 .form__heading--contact {
@@ -235,6 +216,24 @@
 .form__phone path,
 .form__mail path {
   fill: #444444;
+}
+
+.form__input--error:hover,
+.form__input--error:focus,
+.form__input--error {
+  outline: 2px solid #ff8282;
+}
+
+.form__input--error:hover + .form__phone,
+.form__input--error:hover + .form__mail,
+.form__input--error:focus + .form__phone,
+.form__input--error:focus + .form__mail {
+  fill: #ff8282;
+}
+
+.form__input--error + .form__phone,
+.form__input--error + .form__mail {
+  fill: #ff8282;
 }
 
 .form__note {
