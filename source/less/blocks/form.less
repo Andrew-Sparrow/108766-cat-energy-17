@@ -169,12 +169,12 @@
 }
 
 .form__input:hover {
-  border: 1px solid #cdcdcd;
+  outline: 1px solid #cdcdcd;
 }
 
 .form__input:invalid:hover,
 .form__input:invalid {
-  border: 2px solid #ff8282;
+  outline: 2px solid #ff8282;
 }
 
 .form__contacts {
@@ -191,7 +191,7 @@
 }
 
 .form__input--error:focus {
-  border-color: #ff8282;
+  outline-color: #ff8282;
 }
 
 .form__input--error + .form__phone,
@@ -201,14 +201,13 @@
 
 .form__textarea:focus,
 .form__input:focus {
-  border-width: 2px;
-  border-color: #444444;
-  outline: none;
+  outline-width: 2px;
+  outline-color: #444444;
 }
 
 .form__input--error {
   border-width: 2px;
-  border-color: #ff8282;
+  outline-color: #ff8282;
 }
 
 .form__heading--contact {
@@ -600,7 +599,7 @@
 
   .form__submit {
     flex-direction: row;
-    margin-bottom: 73px;
+    margin-bottom: 70px;
   }
 
   .form__button {
@@ -622,7 +621,7 @@
 
 @media (min-width: @desktop-width) {
   .form__title {
-    margin-top: -5px;
+    margin-top: -2px;
     margin-bottom: 52px;
   }
 
@@ -711,7 +710,7 @@
   }
 
   .form__label--radio {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 
   .form__radiobutton:last-child,

@@ -40,6 +40,7 @@
   text-transform: uppercase;
   font-weight: 400;
   color: @black;
+  z-index: 100;
 }
 
 .header__toggle {
@@ -93,7 +94,7 @@
     box-sizing: border-box;
     min-height: 142px;
     margin: 0 auto;
-    margin-top: 47px;
+    margin-top: 43px;
     padding: 0;
   }
 
@@ -108,12 +109,12 @@
     margin-bottom: 0;
   }
 
-  .header__link--hover:hover {
+  .header__link[href]:hover {
     cursor: pointer;
     opacity: 0.7;
   }
 
-  .header__link--hover:active {
+  .header__link[href]:active {
     opacity: 0.5;
   }
 
