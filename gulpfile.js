@@ -90,7 +90,7 @@ gulp.task("refresh", function (done) {
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**/*.{png,jpg,jpeg,svg,webp}",
+    "source/img/**/*.{png,jpg,jpeg,svg,webp,ico}",
     "source/js/**/*.js",
     "source/*.ico"
   ],{
