@@ -9,10 +9,7 @@
   <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-  <script>
-    document.createElement( "picture" );
-  </script>
-  <script src="js/picturefill.js" async></script>
+
 </head>
 
 <body>
@@ -209,15 +206,17 @@
           </address>
         </div>
       </div>
-      <iframe class="collaborate__map"
-        src="https://www.google.com/maps/d/embed?mid=1N75d33nft6g4-QknrXp1LydtLC-WFDSM&hl=en" width="640" height="78">
-      </iframe>
-      <picture class="collaborate__picture">
-        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-        <img class="collaborate__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="280"
-              height="270" alt="cat's food">
-      </picture>
+      <div class="collaborate__wrapper">
+        <iframe class="collaborate__map"
+                src="https://www.google.com/maps/d/embed?mid=1N75d33nft6g4-QknrXp1LydtLC-WFDSM&hl=en" width="640" height="78">
+        </iframe>
+        <picture class="collaborate__picture">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="collaborate__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="280"
+               height="270" alt="cat's food">
+        </picture>
+      </div>
     </div>
   </main>
   <footer class="footer">
@@ -261,6 +260,11 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
 </body>
 
 </html>

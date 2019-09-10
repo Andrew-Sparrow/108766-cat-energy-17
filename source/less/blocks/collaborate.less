@@ -1,7 +1,3 @@
-.collaborate {
-  position: relative;
-}
-
 .collaborate__box {
   margin: 0 auto;
   box-sizing: border-box;
@@ -57,12 +53,19 @@
   overflow-wrap: break-word;
 }
 
+.collaborate__wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .collaborate__map {
   width: 100%;
   border: none;
   background-color: #fdf7ef;
   min-height: 360px;
   margin: 0;
+  position: relative;
+  z-index: 500;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
@@ -136,7 +139,8 @@
   }
 
   .collaborate__image {
-    min-height: 403px;
+    min-height: 395px;
+    top: 184px;
   }
 }
 
@@ -164,7 +168,7 @@
     padding-right: 85px;
     padding-top: 64px;
     padding-bottom: 55px;
-    z-index: 500;
+    z-index: 600;
   }
 
   .collaborate__advert {
@@ -196,11 +200,15 @@
   }
 
   .collaborate__map {
+    position: relative;
     min-height: 399px;
-    z-index: 400;
+    z-index: 500;
+    background: none;
   }
 
   .collaborate__image {
-    z-index: 100;
+    height: 399px;
+    top: 0;
+    z-index: 400;
   }
 }
