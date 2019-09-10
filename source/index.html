@@ -5,9 +5,13 @@
   <meta charset="utf-8">
   <title>Главная:Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="/fonts/oswaldrmedium.woff2" as="font">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -182,7 +186,9 @@
             <div class="denotation">
               <p class="denotation__item">Было</p>
               <div class="denotation__bar">
-                <input class="denotation__slider" type="range" min="0" value="0" max="100">
+                <div class="denotation__slider">
+                  <div class="denotation__thumb"></div>
+                </div>
               </div>
               <p class="denotation__item">Стало</p>
             </div>
@@ -243,7 +249,7 @@
         aria-label="курс адаптивной верстки HTMLAcademy">
         <span class="copyright__name">HTML Academy</span>
         <svg class="copyright__logo" width="27" height="34">
-          <use xlink:href="#htmlacademy-svg"></use>
+          <use xlink:href="#htmlacademy"></use>
         </svg>
       </a>
     </div>

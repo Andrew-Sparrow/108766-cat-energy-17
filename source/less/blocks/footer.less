@@ -48,8 +48,16 @@
 
 @media (min-width: @tablet-width) {
   .footer__box {
-    width: initial;
     border-bottom: none;
+  }
+
+  .footer__box:nth-child(1) {
+    width: 133px;
+  }
+
+  .footer__box:nth-child(2) {
+    width: 146px;
+    margin-left: 44px;
   }
 
   .footer__link {
@@ -64,7 +72,7 @@
   }
 
   .footer__copyright {
-    width: 162px;
+    width: 170px;
     padding: 0;
   }
 
@@ -76,6 +84,7 @@
   }
 
   .footer__social {
+    width: 127px;
     padding-bottom: 0;
     margin-left: 22px;
     margin-top: 14px;
@@ -85,7 +94,7 @@
 @media (min-width: @desktop-width) {
   .footer__social {
     margin-top: 21px;
-    margin-left: 15px;
+    margin-left: 0;
   }
 
   .social__fb svg {

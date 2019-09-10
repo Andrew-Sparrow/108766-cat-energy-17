@@ -2,7 +2,7 @@
   display: flex;
   text-decoration: none;
   color: @black;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .copyright__logo {
@@ -10,6 +10,7 @@
 }
 
 .copyright__name {
+  width: 132px;
   font-family: "Arial", sans-serif;
   margin-top: 10px;
   font-size: 16px;
@@ -18,13 +19,20 @@
 
 @media (min-width: @tablet-width) {
   .copyright {
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   .copyright__name {
+    width: 117px;
     font-size: 16px;
     line-height: 16px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: -1px;
+    margin-right: 20px;
+  }
+
+  .copyright__logo {
+    width: 27px;
+    flex-shrink: 0;
   }
 }
