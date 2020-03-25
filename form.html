@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Форма:Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="source/img/favicon.ico" type="image/x-icon" >
+  <link rel="preload" href="source/fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="source/fonts/oswaldrmedium.woff2" as="font">
+  <link rel="stylesheet" href="source/css/style.min.css">
+</head>
+
+<body>
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
+
+<header class="header">
+  <div class="header__wrapper">
+    <a class="header__link" href="index.html">
+      <picture class="header__picture">
+        <source media="(min-width: 1300px)" srcset="source/img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="source/img/logo-tablet.svg">
+        <img class="header__img" src="source/img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
+      </picture>
+    </a>
+    <!--спрятать кнопку для меню с JavaScript - класс "header__toggle--hide"-->
+    <button class="header__toggle header__toggle--hide" type="button" aria-label="меню">
+      <!--спрятать кнопку для меню - класс "header__icon--hide"-->
+      <img class="header__icon" src="source/img/icon-mobile-menu.svg" width="25" height="19" alt="меню">
+      <img class="header__icon header__icon--close header__icon--hide" src="source/img/icon-close.svg" width="25" height="25" alt="кнопка закрыть меню">
+    </button>
+  </div>
+  <!--Показать меню навигации - "navigation--show"-->
+  <nav class="navigation navigation--show">
+    <div class="navigation__wrapper">
+      <ul class="bill">
+        <li class="bill__item">
+          <a class="bill__link bill__link--hover" href="index.html">Главная</a>
+        </li>
+        <li class="bill__item">
+          <a class="bill__link bill__link--hover" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="bill__item">
+          <a class="bill__link bill__link--active" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+  <main class="form">
+    <div class="form__container form__container--title">
+      <h1 class="headline form__title">Подбор программы</h1>
+    </div>
+    <form name="choice_program" action=" https://echo.htmlacademy.ru" method="post">
+      <section class="form__selection">
+        <div class="form__full form__full--part">
+          <div class="form__container form__container--part">
+            <p class="form__plea">
+              Заполните анкету и мы подберем программу питания для вашего кота
+            </p>
+            <ul class="form__inputs">
+              <li class="form__item form__item--person">
+                <label class="form__label" for="name">
+                  Имя:*
+                </label>
+                <!--  error- "form__input--error"-->
+                <input class="form__input form__input--name" id="name" type="text" name="name" placeholder="Барсик" required>
+              </li>
+              <li class="form__item form__item--person">
+                <label class="form__label form__label--weight" for="weight">
+                  Вес (кг):*
+                </label>
+                <input class="form__input" id="weight" type="text" name="weight" placeholder="7" required>
+              </li>
+              <li class="form__item form__item--person">
+                <label class="form__label form__label--last" for="age">
+                  Возраст (лет):
+                </label>
+                <input class="form__input" id="age" type="text" name="age" placeholder="7">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__full form__full--part">
+          <div class="form__container form__container--part">
+            <ul class="form__radiobuttons">
+              <li class="form_radiobutton">
+                <input class="form__radio" id="thin" type="radio" name="weight" checked>
+                <label class="form__label form__label--radio" for="thin">Похудение</label>
+              </li>
+              <li class="form__radiobutton">
+                <input class="form__radio" id="fat" type="radio" name="weight">
+                <label class="form__label form__label--radio" for="fat">Набор массы</label>
+              </li>
+              <li class="form__radiobutton">
+                <input class="form__radio" id="advice" type="radio" name="weight">
+                <label class="form__label form__label--radio form__label--last" for="advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="form__container">
+        <h3 class="form__heading form__heading--contact">Контактные данные (владельца кота)</h3>
+        <ul class="form__contacts">
+          <li class="form__item form__item--contact form__item--mail">
+            <label class="form__label" for="email">E-mail:*</label>
+            <input class="form__input form__input--contact form__input--mail" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <svg class="form__mail" width="17" height="13">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+          </li>
+          <li class="form__item form__item--contact form__item--phone">
+            <label class="form__label form__label--last" for="phone">Телефон:*</label>
+            <input class="form__input form__input--contact form__input--phone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            <svg class="form__phone" width="20" height="20">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+      <section class="form__container">
+        <h3 class="form__heading form__heading--comment">Комментарий</h3>
+        <textarea class="form__textarea" id="story" name="story" rows="5" cols="33" placeholder="Расскажите обо всех повадках кота
+        "></textarea>
+      </section>
+      <section class="form__container">
+        <h3 class="form__heading form__heading--extra">Дополнительно</h3>
+        <ul class="form__extras">
+          <li class="form__checkbox">
+            <input class="form__check" id="sugar" type="checkbox" name="sugar" checked>
+            <label class="form__label form__label--check" for="sugar">Сахарозаменитель</label>
+          </li>
+          <li class="form__checkbox">
+            <input class="form__check" id="water" type="checkbox" name="water">
+            <label class="form__label form__label--check" for="water">Питьевая вода</label>
+          </li>
+          <li class="form__checkbox">
+            <input class="form__check" id="milk" type="checkbox" name="milk">
+            <label class="form__label form__label--check" for="milk">Молоко</label>
+          </li>
+          <li class="form__checkbox">
+            <input class="form__check" id="vitamin" type="checkbox" name="milk">
+            <label class="form__label form__label--check" for="vitamin">Витамины</label>
+          </li>
+        </ul>
+        <div class="form__submit">
+          <input class="button form__button" type="submit" value="Отправить заявку">
+          <p class="form__note">* — Обязательные поля</p>
+        </div>
+      </section>
+    </form>
+    <div class="collaborate">
+      <div class="collaborate__box collaborate__box--background">
+        <div class="collaborate__container container">
+          <p class="collaborate__advert">
+            приглашаем к&nbsp;сотрудничеству дилеров!
+          </p>
+          <address class="collaborate__address">
+            <span class="collaborate__street">ул. Большая Конюшенная, д. 19/8</span>
+            Санкт-Петербург
+          </address>
+        </div>
+      </div>
+      <iframe class="collaborate__map"
+              src="https://www.google.com/maps/d/embed?mid=1N75d33nft6g4-QknrXp1LydtLC-WFDSM&hl=en" width="640" height="78">
+      </iframe>
+      <picture class="collaborate__picture">
+        <source media="(min-width: 1300px)" srcset="source/img/Layer-map-pin-desktop.png">
+        <source media="(min-width: 768px)" srcset="source/img/map-layer-pin-tablet.png">
+        <img class="collaborate__image" src="source/img/Layer-map-pin-mobile.png" width="280" height="270" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </picture>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container wrapper">
+      <div class="footer__box">
+        <a class="footer__link">
+          <img class="footer__img" width="128" height="24" src="source/img/logo-footer.svg" alt="логотип Cat Energy">
+        </a>
+      </div>
+      <div class="footer__box">
+        <ul class="social footer__social">
+          <li class="social__item">
+            <a class="social__vk" href="#" aria-label="Наша страница во ВКонтакте">
+              <svg width="22" height="12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__instagramm" href="#" aria-label="Наша страница в Инстаграмме">
+              <svg width="23" height="23">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__fb" href="#" aria-label="Мы в Фейсбуке">
+              <svg width="13" height="28">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="copyright footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="курс адаптивной верстки HTMLAcademy">
+        <span class="copyright__name">HTML Academy</span>
+        <svg class="copyright__logo" width="27" height="34">
+          <use xlink:href="#htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+<script>
+  document.createElement( "picture" );
+</script>
+<script src="js/picturefill.js" async></script>
+</body>
+
+</html>
