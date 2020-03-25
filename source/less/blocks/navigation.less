@@ -4,17 +4,15 @@
   padding: 0;
 }
 
-.navigation__toggle {
-  padding: 0;
-  background-color: white;
-  border: none;
-  margin-bottom: -1px;
+.navigation--show {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
   .navigation {
+    width: 482px;
     display: block;
-    width: 500px;
+    margin-top: 6px;
   }
 
   .navigation__wrapper {
@@ -22,9 +20,5 @@
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .navigation__toggle {
-    display: none;
   }
 }

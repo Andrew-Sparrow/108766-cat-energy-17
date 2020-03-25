@@ -34,14 +34,14 @@
     top: 3px;
     right: 0;
     background: url("../img/index-background-desktop@1x.jpg");
-    background-size: 720px 696px;
+    background-size: 720px 100%;
     background-repeat: no-repeat;
     background-position: left;
     z-index: -1;
-  }
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/index-background-desktop@2x.jpg");
-    background-size: 720px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px 696px;
+    }
   }
 }

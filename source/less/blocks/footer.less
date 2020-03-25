@@ -48,14 +48,23 @@
 
 @media (min-width: @tablet-width) {
   .footer__box {
-    width: initial;
     border-bottom: none;
+  }
+
+  .footer__box:nth-child(1) {
+    width: 133px;
+  }
+
+  .footer__box:nth-child(2) {
+    width: 146px;
+    margin-left: -8px;
+    margin-top: 8px;
   }
 
   .footer__link {
     display: inline-block;
     padding-left: 2px;
-    margin-top: 27px;
+    margin-top: 31px;
     margin-bottom: 29px;
   }
 
@@ -64,7 +73,7 @@
   }
 
   .footer__copyright {
-    width: 162px;
+    width: 170px;
     padding: 0;
   }
 
@@ -76,6 +85,7 @@
   }
 
   .footer__social {
+    width: 127px;
     padding-bottom: 0;
     margin-left: 22px;
     margin-top: 14px;
@@ -85,11 +95,20 @@
 @media (min-width: @desktop-width) {
   .footer__social {
     margin-top: 21px;
-    margin-left: 15px;
+    margin-left: 23px;
+    margin-right: 0;
   }
 
   .social__fb svg {
     margin-top: -2px;
     margin-left: 4px;
+  }
+
+  .footer__link:hover {
+    opacity: 0.7;
+  }
+
+  .footer__link:active {
+    opacity: 0.5;
   }
 }

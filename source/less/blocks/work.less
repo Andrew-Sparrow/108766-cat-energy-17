@@ -1,4 +1,8 @@
 .work {
+  border-bottom: 1px solid @gray;
+}
+
+.work__box {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -99,14 +103,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .work {
+  .work__box {
     flex-wrap: wrap;
     margin-bottom: 0;
   }
 
   .work__list {
     width: 100%;
-    margin-bottom: -22px;
+    margin-bottom: -34px;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -207,6 +211,10 @@
 
 @media (min-width: @desktop-width) {
   .work {
+    border-bottom: none;
+  }
+
+  .work__box {
     width: @desktop-content;
   }
 

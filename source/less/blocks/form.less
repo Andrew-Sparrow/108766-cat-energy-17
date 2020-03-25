@@ -1,11 +1,15 @@
 .form {
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .form__title {
   margin-top: 24px;
   margin-bottom: 35px;
+}
+
+.form__full {
+  border-bottom: 1px solid @gray;
 }
 
 //title
@@ -164,6 +168,10 @@
   flex-grow: 1;
 }
 
+.form__input:hover {
+  outline: 1px solid #cdcdcd;
+}
+
 .form__contacts {
   margin-bottom: 4px;
 }
@@ -177,25 +185,10 @@
   fill: @leaf;
 }
 
-.form__input--error:focus {
-  border-color: #ff8282;
-}
-
-.form__input--error + .form__phone,
-.form__input--error + .form__mail {
-  fill: #ff8282;
-}
-
 .form__textarea:focus,
 .form__input:focus {
-  border-width: 2px;
-  border-color: #444444;
-  outline: none;
-}
-
-.form__input--error {
-  border-width: 2px;
-  border-color: #ff8282;
+  outline-width: 2px;
+  outline-color: #444444;
 }
 
 .form__heading--contact {
@@ -223,6 +216,24 @@
 .form__phone path,
 .form__mail path {
   fill: #444444;
+}
+
+.form__input--error:hover,
+.form__input--error:focus,
+.form__input--error {
+  outline: 2px solid #ff8282;
+}
+
+.form__input--error:hover + .form__phone,
+.form__input--error:hover + .form__mail,
+.form__input--error:focus + .form__phone,
+.form__input--error:focus + .form__mail {
+  fill: #ff8282;
+}
+
+.form__input--error + .form__phone,
+.form__input--error + .form__mail {
+  fill: #ff8282;
 }
 
 .form__note {
@@ -342,7 +353,7 @@
   transform: scale(0);
 }
 
-.form--last {
+.form__label--last {
   margin-bottom: 0;
 }
 
@@ -362,6 +373,10 @@
     font-size: 60px;
     margin-top: 21px;
     margin-bottom: 52px;
+  }
+
+  .form__full {
+    border-bottom: none;
   }
 
   .form__container {
@@ -391,7 +406,7 @@
   }
 
   .form__heading--comment {
-    margin-bottom: 75px;
+    margin-bottom: 83px;
   }
 
   .form__heading--contact::after {
@@ -546,7 +561,7 @@
     font-size: 20px;
     min-height: 174px;
     margin-bottom: 22px;
-    padding-top: 20px;
+    padding-top: 13px;
     padding-bottom: 43px;
     padding-left: 18px;
   }
@@ -583,7 +598,7 @@
 
   .form__submit {
     flex-direction: row;
-    margin-bottom: 73px;
+    margin-bottom: 70px;
   }
 
   .form__button {
@@ -605,7 +620,7 @@
 
 @media (min-width: @desktop-width) {
   .form__title {
-    margin-top: 36px;
+    margin-top: -2px;
     margin-bottom: 52px;
   }
 
@@ -620,7 +635,7 @@
     margin-bottom: 50px;
   }
 
-  .full__form--part {
+  .form__full--part {
     width: 570px;
   }
 
@@ -694,7 +709,7 @@
   }
 
   .form__label--radio {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 
   .form__radiobutton:last-child,

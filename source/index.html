@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <title>Главная:Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">  <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body>
@@ -15,18 +18,22 @@
 
   <header class="header header--margin">
     <div class="header__wrapper">
-      <a class="header__link header__link--hover" href="index.html">
-        <picture class="product__picture">
+      <a class="header__link">
+        <picture class="header__picture">
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header__img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
         </picture>
       </a>
-      <button class="navigation__toggle" type="button" aria-label="меню">
-        <img class="navigation__img" src="img/icon-mobile-menu.svg" width="25" height="19" alt="меню">
+      <!--спрятать кнопку для меню с JavaScript - класс "header__toggle--hide"-->
+      <button class="header__toggle header__toggle--hide" type="button" aria-label="меню">
+        <!--спрятать кнопку для меню - класс "header__icon--hide"-->
+        <img class="header__icon" src="img/icon-mobile-menu.svg" width="25" height="19" alt="меню">
+        <img class="header__icon header__icon--close header__icon--hide" src="img/icon-close.svg" width="25" height="25" alt="кнопка закрыть меню">
       </button>
     </div>
-    <nav class="navigation">
+    <!--Показать меню навигации - "navigation--show"-->
+    <nav class="navigation navigation--show">
       <div class="navigation__wrapper">
         <ul class="bill bill--color">
           <li class="bill__item">
@@ -88,8 +95,8 @@
         </a>
       </li>
     </ul>
-    <section class="full__work">
-      <div class="work container wrapper">
+    <section class="work">
+      <div class="work__box container wrapper">
         <h3 class="headline work__title">Как это работает</h3>
         <ul class="work__list">
           <li class="work__item">
@@ -147,7 +154,7 @@
             </p>
           </div>
         </div>
-        <div class="example__container--before">
+        <div class="example__container example__container--before">
           <div class="example__before-after">
             <picture class="example__picture example__picture--before">
               <source type="image/webp" media="(min-width: 1200px)"
@@ -176,7 +183,9 @@
             <div class="denotation">
               <p class="denotation__item">Было</p>
               <div class="denotation__bar">
-                <input class="denotation__slider" type="range" min="0" value="0" max="100">
+                <div class="denotation__slider">
+                  <div class="denotation__thumb"></div>
+                </div>
               </div>
               <p class="denotation__item">Стало</p>
             </div>
@@ -185,7 +194,7 @@
       </div>
     </div>
     <div class="collaborate">
-      <div class="collaborate__box collaborate--main">
+      <div class="collaborate__box collaborate__box--main">
         <div class="collaborate__container container">
           <p class="collaborate__advert">
             приглашаем к&nbsp;сотрудничеству дилеров!
@@ -197,8 +206,13 @@
         </div>
       </div>
       <iframe class="collaborate__map"
-        src="https://www.google.com/maps/d/embed?mid=1N75d33nft6g4-QknrXp1LydtLC-WFDSM&hl=en" width="640" height="78">
+              src="https://www.google.com/maps/d/embed?mid=1N75d33nft6g4-QknrXp1LydtLC-WFDSM&hl=en" width="640" height="78">
       </iframe>
+      <picture class="collaborate__picture">
+        <source media="(min-width: 1300px)" srcset="img/Layer-map-pin-desktop.png">
+        <source media="(min-width: 768px)" srcset="img/map-layer-pin-tablet.png">
+        <img class="collaborate__image" src="img/Layer-map-pin-mobile.png" width="280" height="270" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </picture>
     </div>
   </main>
   <footer class="footer">
@@ -237,11 +251,16 @@
         aria-label="курс адаптивной верстки HTMLAcademy">
         <span class="copyright__name">HTML Academy</span>
         <svg class="copyright__logo" width="27" height="34">
-          <use xlink:href="#htmlacademy-svg"></use>
+          <use xlink:href="#htmlacademy"></use>
         </svg>
       </a>
     </div>
   </footer>
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
 </body>
 
 </html>
