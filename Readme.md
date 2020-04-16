@@ -1,4 +1,4 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Personal training project «Cat energy» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Student: [Andrew Pecherskih](https://up.htmlacademy.ru/adaptive/17/user/108766).
 
