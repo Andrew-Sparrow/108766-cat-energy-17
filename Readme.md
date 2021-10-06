@@ -20,6 +20,11 @@
 - Mobile first
 
 
+---
+##### Full list of projects in my portfolio:
+##### https://andrew-sparrow.github.io/ap-portfolio
+---
+
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
 Repo was built to learn on on-line course «[HTML и CSS, level 2](https://htmlacademy.ru/intensive/adaptive)» by [HTML Academy](https://htmlacademy.ru).
