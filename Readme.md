@@ -3,6 +3,8 @@
 * [Andrew Pecherskih](https://up.htmlacademy.ru/adaptive/17/user/108766).
 
 ---
+###### GitHub Pages Demo - https://andrew-sparrow.github.io/CatEnergy-GP/
+---
 
 #### The following functions and technologies were used in this project:
 
