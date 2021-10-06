@@ -1,6 +1,6 @@
 # Personal training project «Cat energy» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Student: [Andrew Pecherskih](https://up.htmlacademy.ru/adaptive/17/user/108766).
+* [Andrew Pecherskih](https://up.htmlacademy.ru/adaptive/17/user/108766).
 
 ---
 
@@ -26,3 +26,7 @@ Repo was built to learn on on-line course «[HTML и CSS, level 2](https://htm
 [travis-url]: https://travis-ci.com/htmlacademy-adaptive/108766-cat-energy-17
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/108766-cat-energy-17/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/108766-cat-energy-17?type=dev
+
+---
+
+![Alt text](source/img/screenshoot-cat-energy-compressed.jpg?raw=true "Title")

@@ -46,7 +46,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/sass/**/*.less"
   ],
   "engines": {
     "node": "10.16"
