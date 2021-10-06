@@ -19,13 +19,6 @@
 - Less
 - npm
 - Mobile first
----
-#### Functionality:
-- getting data from server
-- filtering hotels by city
-- authorizations
-- privite page
-- adding new comments
 
 ---
 ##### The full list of projects in my portfolio:
