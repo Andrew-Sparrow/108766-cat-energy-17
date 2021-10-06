@@ -21,7 +21,7 @@
 
 
 ---
-##### Full list of projects in my portfolio:
+##### The full list of projects in my portfolio:
 ##### https://andrew-sparrow.github.io/ap-portfolio
 ---
 
